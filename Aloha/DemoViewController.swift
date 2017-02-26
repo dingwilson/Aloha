@@ -9,8 +9,11 @@
 import UIKit
 import CoreLocation
 import FirebaseDatabase
+import SwiftVideoBackground
 
 class DemoViewController: UIViewController {
+    
+    @IBOutlet weak var backgroundVideo: BackgroundVideo!
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
@@ -38,6 +41,8 @@ class DemoViewController: UIViewController {
         super.viewDidLoad()
         
         ref = FIRDatabase.database().reference()
+        
+        backgroundVideo.createBackgroundVideo(name: "Background", type: "mp4", alpha: 0.3)
         
         totalImpressions = 0
     }
@@ -82,7 +87,7 @@ class DemoViewController: UIViewController {
         
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
         
-        let valueTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.updateValues), userInfo: nil, repeats: true)
+        let valueTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateValues), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -159,8 +164,6 @@ class DemoViewController: UIViewController {
     func updateTime() {
         findClosestBeacon()
         
-        timeLabel.isHidden = false
-        
         currentTime = currentTime + 1
         timeLabel.text = "You have been here for \(currentTime) seconds."
         
@@ -187,9 +190,13 @@ class DemoViewController: UIViewController {
             break
         }
         
-        messageLabel.isHidden = false
-        
-        totalImpressionsLabel.isHidden = false
+        if currentUser != "My Friend" {
+            timeLabel.isHidden = false
+            
+            messageLabel.isHidden = false
+            
+            totalImpressionsLabel.isHidden = false
+        }
     }
     
     func updateValues() {
