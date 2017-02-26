@@ -19,13 +19,11 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
-  - LFHeatMap (1.0.2)
   - SwiftVideoBackground (0.04)
 
 DEPENDENCIES:
   - Firebase
   - Firebase/Database
-  - LFHeatMap
   - SwiftVideoBackground
 
 SPEC CHECKSUMS:
@@ -35,9 +33,8 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
-  LFHeatMap: 433197b20e4d57a9502bc2a2a21300fa851ff3c6
   SwiftVideoBackground: c0253281fcda5047c36067cbb852d8061513058b
 
-PODFILE CHECKSUM: 76a9167ccfc773dc8864683d66df8b28a4053fcf
+PODFILE CHECKSUM: 21637aff00f419eab07c0bc8cb791979624b2fe7
 
 COCOAPODS: 1.2.0

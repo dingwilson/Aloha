@@ -9,13 +9,10 @@
 import UIKit
 import MapKit
 import CoreLocation
-import LFHeatMap
 
 class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var heatMapImageView: UIImageView!
-    @IBOutlet weak var heatMapButton: UIButton!
     
     let mapSpan = 0.001
     
@@ -23,9 +20,13 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     var beaconList = [(CLBeaconRegion, CLBeacon)]()
     
-    var locations : [CLLocation] = []
+    var numOfImmediateBeacons = 0
+    var numOfNearBeacons = 0
+    var numOfFarBeacons = 0
     
-    var weights : [NSNumber] = []
+    @IBOutlet weak var immediateLabel: UILabel!
+    @IBOutlet weak var nearLabel: UILabel!
+    @IBOutlet weak var farLabel: UILabel!
     
     var timer = Timer()
     
@@ -41,8 +42,6 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.heatMapImageView.isHidden = true
         
         if CLLocationManager.isRangingAvailable() {
             locationManager = CLLocationManager()
@@ -65,7 +64,7 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        //self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.createHeatMap), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.createHeatMap), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -116,42 +115,32 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         print("locationManager Error: \(error)")
     }
     
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        let location = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
-    }
-    
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         
+        var numOfImmediate = 0
+        var numOfNear = 0
+        var numOfFar = 0
+        
         beacons.forEach { beacon in
-            if let index = beaconList.index(where: { $0.1.proximityUUID.uuidString == beacon.proximityUUID.uuidString && $0.1.major == beacon.major && $0.1.minor == beacon.minor }) {
-                if beacon.proximity == .far {
-                    beaconList.remove(at: index)
-                } else {
-                    beaconList[index] = (region, beacon)
-                }
+            if beacon.proximity == .far {
+                numOfFar = numOfFar + 1
+            } else if beacon.proximity == .near {
+                numOfNear = numOfNear + 1
             } else {
-                if beacon.proximity != .far {
-                    beaconList.append((region, beacon))
-                }
+                numOfImmediate = numOfImmediate + 1
             }
         }
         
-        locations.append(CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude))
+        self.numOfImmediateBeacons = numOfImmediate
         
-        weights.append(NSNumber(integerLiteral: beacons.count))
+        self.numOfFarBeacons = numOfFar
+        
+        self.numOfNearBeacons = numOfNear
     }
     
     func createHeatMap() {
-        let heatMapImage = LFHeatMap.heatMap(for: self.mapView, boost: 0.1, locations: self.locations as [AnyObject], weights: self.weights as [AnyObject]) as UIImage
-        
-        self.heatMapImageView.isHidden = false
-        
-        self.heatMapImageView.image = heatMapImage
-        self.heatMapImageView.alpha = 0.75
+        self.immediateLabel.text = "Immediate (~ 1 meter): \(self.numOfImmediateBeacons)"
+        self.nearLabel.text = "Near (~ 50 feet): \(self.numOfNearBeacons)"
+        self.farLabel.text = "Far (~ 100 feet): \(self.numOfFarBeacons)"
     }
-    
-    @IBAction func didPressHeatMapButton(_ sender: Any) {
-        createHeatMap()
-    }
-    
 }

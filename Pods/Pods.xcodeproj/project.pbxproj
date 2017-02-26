@@ -7,114 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D26CCF268947D1E746810A8AFB16AFC /* LFHeatMap.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA59325A579ACE483E900F6BD90F360 /* LFHeatMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E9513FB877B168D7AFF506E647D4302 /* Pods-Aloha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		294BD2A04BAFB667CB4D9F5B5235733A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		188F26B521DE2FB39431AE4429D4695A /* Pods-Aloha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D4636F5E26D7B2E8F64C85B361577E4 /* SwiftVideoBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4F01127BEC22710A4147967C500346 /* SwiftVideoBackground.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3E96087D260638A6B5D2F3F5155EA567 /* LFHeatMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE78EB7E04EA57A030C40CE1A9EAEA33 /* LFHeatMap-dummy.m */; };
-		5235689C9E9FAC2D6D4C22284B5A5C34 /* SwiftVideoBackground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A01A2AA74620354EF596328FA4A2086 /* SwiftVideoBackground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 81751A865551FD9128F92065CDD9F12D /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D8E722C1B4CC41680A6F152263D8020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7ECDEBB070034181281A724A8B560546 /* Pods-Aloha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */; };
-		7F8A2C18A6E00965E7979CF46357FB70 /* SwiftVideoBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = B49A6A64F59BF0412A76051A557A1F5D /* SwiftVideoBackground.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E709FD86CB916D7A964D1747D120C07 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC42A33304520A2235701F260140127A /* LFHeatMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C696176118F6BC80F21FD8FD893FE297 /* LFHeatMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = B24B0B684A0EDE5F7B3009104449D424 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE4AA17046F851B0CF457D16CF1D027 /* LFHeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = F63DAC8BF14E649B6BA63F871C94525F /* LFHeatMap.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F56FC83F80D866E3B3763FFEB88EF86D /* SwiftVideoBackground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 315DE0FE2939842DB1C5117A9EFBB3F7 /* SwiftVideoBackground-dummy.m */; };
-		F6F85FB106F792E0E5FD5E112AEE1B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = B44F968624CB07524EF594EEA501E9CD /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FA5A5DC3A8C2ABF0F062ACE15F4178F0 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C7C67598B3F62342649EEB999A9F4 /* BackgroundVideo.swift */; };
-		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3BD71CD91D0FFC32B9FA313703B63 /* GoogleToolboxForMac-dummy.m */; };
+		3E72EA36C2E77873CCBC444C8A2035C3 /* SwiftVideoBackground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68FAD1DF81B3C17275CB979090CF4A93 /* SwiftVideoBackground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE8ADA7CAE792CB47BFB59989A7D390 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67161E2222373F82DC4C9E3D560BA482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 235B63642FC95D98460A8BA02F0D9543 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99A7675CB2D2FF9528D7527DA46CB2D9 /* Pods-Aloha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */; };
+		B91D959B5DEA4EFD6B8A784C0AE4C929 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AE75C0B84E1FCCF14006BA6E3C502 /* BackgroundVideo.swift */; };
+		C4EF4D38DDA0924CE888A7BCC498CE83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CD258614753A52AF793DA8F2D4A9E9BF /* SwiftVideoBackground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A9BFA35830D07993B2793BD271405 /* SwiftVideoBackground-dummy.m */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = E13168EF9EC6D6E626176017C67F1171 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = D364042F3F42B03B3CF9812980BEB3F0 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9A566A1D8783C9E5586E9C8E2BB1B /* GoogleToolboxForMac-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8EEEA9DD4FE250022D9D0AAEC6163665 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D4B9F4ADAE06EE0186DDCB91672C79A;
-			remoteInfo = SwiftVideoBackground;
-		};
-		C8E2378559C745821DE68A3750730A03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 330017488B7BBC37CD89B9432AB25025;
-			remoteInfo = LFHeatMap;
-		};
-		EFD69246ACE5E46BEF3531D4717D106D /* PBXContainerItemProxy */ = {
+		31EE88A193C62E1B7BAAD0AD0F057EE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
 			remoteInfo = GoogleToolboxForMac;
 		};
+		5D368F98325B21226E9F2E773BBB4F79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1371720C08807E7BA167DA492B80EC;
+			remoteInfo = SwiftVideoBackground;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FEE442D84E018ABC0E449866C8A4A63 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1554711ADF1741BF6A539C7534130B0E /* Pods-Aloha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aloha-frameworks.sh"; sourceTree = "<group>"; };
-		1CE53B30EFCD1531EE2BC98A9D3DCEAE /* SwiftVideoBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftVideoBackground.framework; path = SwiftVideoBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		315DE0FE2939842DB1C5117A9EFBB3F7 /* SwiftVideoBackground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftVideoBackground-dummy.m"; sourceTree = "<group>"; };
-		397E9D7F75E768CB0C9BCE58F42BCFE9 /* LFHeatMap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LFHeatMap-prefix.pch"; sourceTree = "<group>"; };
-		3C49CD64C9F8CC5005A754026E444ABE /* SwiftVideoBackground-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-prefix.pch"; sourceTree = "<group>"; };
-		4082C506A789470650AC2B77AE1CFC91 /* Pods_Aloha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aloha.framework; path = "Pods-Aloha.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40DEBF079324B723791581BD174A6DE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		444DF8AB3A46BCD6076C1C09ECF0BC3D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		492A735CEF072D7E4A0F938F9C5066FE /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC377D163A2B091BD9254E606FC5A79 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		235B63642FC95D98460A8BA02F0D9543 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		346A9BFA35830D07993B2793BD271405 /* SwiftVideoBackground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftVideoBackground-dummy.m"; sourceTree = "<group>"; };
+		3C88D59C98F9E9A0AB779D4EC5E12CFA /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		43801F565CECC00073BBD4192F310C42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACEA8FC0FA7832FE6A63A1A1D3793B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C356750D81D19C92B2C313658E18A48 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
 		4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aloha-dummy.m"; sourceTree = "<group>"; };
-		511918242B0E4533973747C3DD67063E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5108330016B8EC9EA50B545D609BC2B7 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		55D1E963852FA47CEAAD70AACC3551DD /* Pods-Aloha-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aloha-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A01A2AA74620354EF596328FA4A2086 /* SwiftVideoBackground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-umbrella.h"; sourceTree = "<group>"; };
+		5C4F01127BEC22710A4147967C500346 /* SwiftVideoBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftVideoBackground.h; path = SwiftVideoBackground/SwiftVideoBackground.h; sourceTree = "<group>"; };
 		5EB4AFB99670A8E7047E897319CC77B8 /* Pods-Aloha-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aloha-resources.sh"; sourceTree = "<group>"; };
-		6E709FD86CB916D7A964D1747D120C07 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
-		6FF3BD71CD91D0FFC32B9FA313703B63 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftVideoBackground.xcconfig; sourceTree = "<group>"; };
+		68FAD1DF81B3C17275CB979090CF4A93 /* SwiftVideoBackground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-umbrella.h"; sourceTree = "<group>"; };
 		774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aloha-umbrella.h"; sourceTree = "<group>"; };
-		783744E5E45BD3BA88DE270BECC6903F /* LFHeatMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LFHeatMap.modulemap; sourceTree = "<group>"; };
-		81751A865551FD9128F92065CDD9F12D /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		817C7C67598B3F62342649EEB999A9F4 /* BackgroundVideo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundVideo.swift; path = SwiftVideoBackground/BackgroundVideo.swift; sourceTree = "<group>"; };
-		84342D42AD586B0605AC2561DC879320 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		910813C409C466990F709C2DB31BE218 /* LFHeatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LFHeatMap.framework; path = LFHeatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80486921A89E383C2ADAAF0DE3C7B96C /* SwiftVideoBackground-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AE8ADA7CAE792CB47BFB59989A7D390 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		9D622F5CBBF49A7E47E5D1341CDDCC4B /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		9EE0E3EFA8221221400F90C69035C77A /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aloha.release.xcconfig"; sourceTree = "<group>"; };
-		B24B0B684A0EDE5F7B3009104449D424 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
-		B3E89B79ACDDD9200B9F58F3D3995861 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		B44F968624CB07524EF594EEA501E9CD /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
-		B49A6A64F59BF0412A76051A557A1F5D /* SwiftVideoBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftVideoBackground.h; path = SwiftVideoBackground/SwiftVideoBackground.h; sourceTree = "<group>"; };
-		B682CE739D60F28554151986D2A92D99 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		BA87EF6A1CE82A3D525B228BE8EA5020 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		A9BF2950E28392F5E6599B899A21D624 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93048A5F8CD9BCDFC3851F11A2F53F1 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
 		C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aloha.debug.xcconfig"; sourceTree = "<group>"; };
-		C696176118F6BC80F21FD8FD893FE297 /* LFHeatMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LFHeatMap-umbrella.h"; sourceTree = "<group>"; };
+		C6E9A566A1D8783C9E5586E9C8E2BB1B /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D94153E84079F2E66CF757A225E6D978 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		D364042F3F42B03B3CF9812980BEB3F0 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		DB5319E3B699DFDC64994425527E5323 /* SwiftVideoBackground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftVideoBackground.modulemap; sourceTree = "<group>"; };
 		DD6E768F1E30C03637D3FC3B5D37BBAD /* Pods-Aloha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aloha-acknowledgements.plist"; sourceTree = "<group>"; };
-		DD90962803286CAC2F22FB0147319248 /* SwiftVideoBackground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftVideoBackground.xcconfig; sourceTree = "<group>"; };
-		DE78EB7E04EA57A030C40CE1A9EAEA33 /* LFHeatMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LFHeatMap-dummy.m"; sourceTree = "<group>"; };
+		E13168EF9EC6D6E626176017C67F1171 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
 		E14DB07A0B2D0BE768B2CE33AD759158 /* Pods-Aloha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Aloha.modulemap"; sourceTree = "<group>"; };
-		EBD1E3F00083C776D5CFDD220F868499 /* SwiftVideoBackground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftVideoBackground.modulemap; sourceTree = "<group>"; };
-		EC5591DD43AED4757205275B28E331A1 /* LFHeatMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LFHeatMap.xcconfig; sourceTree = "<group>"; };
-		F63DAC8BF14E649B6BA63F871C94525F /* LFHeatMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LFHeatMap.m; path = LFHeatMap/LFHeatMap.m; sourceTree = "<group>"; };
-		FB65D547D8E7656E2268B32067AC146F /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		FFA59325A579ACE483E900F6BD90F360 /* LFHeatMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LFHeatMap.h; path = LFHeatMap/LFHeatMap.h; sourceTree = "<group>"; };
+		F09AE75C0B84E1FCCF14006BA6E3C502 /* BackgroundVideo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundVideo.swift; path = SwiftVideoBackground/BackgroundVideo.swift; sourceTree = "<group>"; };
+		F209EF51CFFB3AAD448A1701C490C080 /* SwiftVideoBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftVideoBackground.framework; path = SwiftVideoBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B2CEFAF7C3368C5DF0463466870C3F /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		F385A1E265FC4D26003D0D397791E732 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BAEFBBE789F837251F718ED3770F9B /* Pods_Aloha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aloha.framework; path = "Pods-Aloha.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0DF0D9810C96CD24F9408641AC0C454C /* Frameworks */ = {
+		493587F05E80F32B487609F390A9CA59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F85FB106F792E0E5FD5E112AEE1B4F /* Foundation.framework in Frameworks */,
+				C4EF4D38DDA0924CE888A7BCC498CE83 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7D8165E3FBC4F0AD4D2B56016583CBA /* Frameworks */ = {
+		964D6B419593DF8672F7CF18790EB063 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D8E722C1B4CC41680A6F152263D8020 /* Foundation.framework in Frameworks */,
+				67161E2222373F82DC4C9E3D560BA482 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,68 +105,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF0278FAFE8E15CEC0F7211A76F04D59 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				294BD2A04BAFB667CB4D9F5B5235733A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0417A01C57F1E74D484CA1CF79336292 /* LFHeatMap */ = {
+		0E642D13900F1856EAFC9658AAEE71A7 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				FFA59325A579ACE483E900F6BD90F360 /* LFHeatMap.h */,
-				F63DAC8BF14E649B6BA63F871C94525F /* LFHeatMap.m */,
-				EBD3A0C04D07FFBFCFB4C5FB133AD2E9 /* Support Files */,
+				9AE8ADA7CAE792CB47BFB59989A7D390 /* GTMDefines.h */,
 			);
-			name = LFHeatMap;
-			path = LFHeatMap;
+			name = Defines;
 			sourceTree = "<group>";
 		};
-		04530C9CD323F54FBA022F96D980677E /* Core */ = {
+		135DA04DC6439712A105DF5CD6EB0C4A /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				D94153E84079F2E66CF757A225E6D978 /* Firebase.h */,
+				21D026751CB3DD88C043A52F077CF361 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		21D026751CB3DD88C043A52F077CF361 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0E3EFA8221221400F90C69035C77A /* Firebase.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		1CFE43BDAD6B06FBDF252FFA2AFC75B0 /* FirebaseCore */ = {
+		29187A0B84D26E89C7D66D61F854C311 /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				2B47393817129E99F8FBD8E73FE992FB /* Frameworks */,
+				7FA63FBD4FA2DDBE40A9F9AAB1693706 /* Frameworks */,
 			);
 			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
-		223EE49A1FF9BADEF0F13ABB9F5E9A25 /* NSData+zlib */ = {
+		4023BDB4055D300BDDAE90F36B68B98C /* NSData+zlib */ = {
 			isa = PBXGroup;
 			children = (
-				B24B0B684A0EDE5F7B3009104449D424 /* GTMNSData+zlib.h */,
-				B44F968624CB07524EF594EEA501E9CD /* GTMNSData+zlib.m */,
+				E13168EF9EC6D6E626176017C67F1171 /* GTMNSData+zlib.h */,
+				D364042F3F42B03B3CF9812980BEB3F0 /* GTMNSData+zlib.m */,
 			);
 			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
-		2B47393817129E99F8FBD8E73FE992FB /* Frameworks */ = {
+		4363FC1506DF00F1A21BCBEBF4EF2C79 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B682CE739D60F28554151986D2A92D99 /* FirebaseCore.framework */,
+				43801F565CECC00073BBD4192F310C42 /* Info.plist */,
+				DB5319E3B699DFDC64994425527E5323 /* SwiftVideoBackground.modulemap */,
+				5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */,
+				346A9BFA35830D07993B2793BD271405 /* SwiftVideoBackground-dummy.m */,
+				80486921A89E383C2ADAAF0DE3C7B96C /* SwiftVideoBackground-prefix.pch */,
+				68FAD1DF81B3C17275CB979090CF4A93 /* SwiftVideoBackground-umbrella.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4798A2B88CF6734B0280C5C801425FB1 /* Defines */ = {
-			isa = PBXGroup;
-			children = (
-				81751A865551FD9128F92065CDD9F12D /* GTMDefines.h */,
-			);
-			name = Defines;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftVideoBackground";
 			sourceTree = "<group>";
 		};
 		485C1B5D1C173BDE75E1FACBF284D6FC /* Targets Support Files */ = {
@@ -196,39 +171,6 @@
 				DBDD6593C9A6F1625CC87BFC15E2777C /* Pods-Aloha */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		608D0F74AC8D7CD427B105022CCC9A5E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				492A735CEF072D7E4A0F938F9C5066FE /* GoogleToolboxForMac.framework */,
-				910813C409C466990F709C2DB31BE218 /* LFHeatMap.framework */,
-				4082C506A789470650AC2B77AE1CFC91 /* Pods_Aloha.framework */,
-				1CE53B30EFCD1531EE2BC98A9D3DCEAE /* SwiftVideoBackground.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		60DA6904145878D0AAA6A6B4D1B702BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				444DF8AB3A46BCD6076C1C09ECF0BC3D /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		681761BF5C07118E5C1795C4C21C3E93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				40DEBF079324B723791581BD174A6DE7 /* Info.plist */,
-				EBD1E3F00083C776D5CFDD220F868499 /* SwiftVideoBackground.modulemap */,
-				DD90962803286CAC2F22FB0147319248 /* SwiftVideoBackground.xcconfig */,
-				315DE0FE2939842DB1C5117A9EFBB3F7 /* SwiftVideoBackground-dummy.m */,
-				3C49CD64C9F8CC5005A754026E444ABE /* SwiftVideoBackground-prefix.pch */,
-				5A01A2AA74620354EF596328FA4A2086 /* SwiftVideoBackground-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftVideoBackground";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -244,49 +186,71 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CB447FEB32F49344114A3C680537DD4A /* Pods */,
-				608D0F74AC8D7CD427B105022CCC9A5E /* Products */,
+				7F6FE6F733958D4C28D87A6F675C7705 /* Pods */,
+				CC102D0A2F42DF4D9404227C614091EA /* Products */,
 				485C1B5D1C173BDE75E1FACBF284D6FC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		845EECF7EED8A858A5BA37CE4FA37466 /* GoogleToolboxForMac */ = {
+		7F6FE6F733958D4C28D87A6F675C7705 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4798A2B88CF6734B0280C5C801425FB1 /* Defines */,
-				223EE49A1FF9BADEF0F13ABB9F5E9A25 /* NSData+zlib */,
-				FA4BFE85233ECC0F93E2D53C29A50DC3 /* Support Files */,
+				135DA04DC6439712A105DF5CD6EB0C4A /* Firebase */,
+				A9AB0BD10732959B52B267A61E7CC6D2 /* FirebaseAnalytics */,
+				29187A0B84D26E89C7D66D61F854C311 /* FirebaseCore */,
+				D8F5DD902FBC100E475784573FD49DDB /* FirebaseDatabase */,
+				F207EA7444929B65F4872C5EB58B03B8 /* FirebaseInstanceID */,
+				B86122A6B929504526FC78D132C28F13 /* GoogleToolboxForMac */,
+				A3F0690F8EEFF9BD30F91B1E6B0E21C1 /* SwiftVideoBackground */,
 			);
-			name = GoogleToolboxForMac;
-			path = GoogleToolboxForMac;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		90C111FADAE6C5B4948BF8F86327E5A4 /* Frameworks */ = {
+		7FA63FBD4FA2DDBE40A9F9AAB1693706 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB65D547D8E7656E2268B32067AC146F /* FirebaseDatabase.framework */,
+				3C88D59C98F9E9A0AB779D4EC5E12CFA /* FirebaseCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		919C8204BD263DCA44B0CF9F24BBEE9E /* Firebase */ = {
+		A3F0690F8EEFF9BD30F91B1E6B0E21C1 /* SwiftVideoBackground */ = {
 			isa = PBXGroup;
 			children = (
-				04530C9CD323F54FBA022F96D980677E /* Core */,
-			);
-			name = Firebase;
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		B4B72AE4082E2305AF8C437FB62F072D /* SwiftVideoBackground */ = {
-			isa = PBXGroup;
-			children = (
-				817C7C67598B3F62342649EEB999A9F4 /* BackgroundVideo.swift */,
-				B49A6A64F59BF0412A76051A557A1F5D /* SwiftVideoBackground.h */,
-				681761BF5C07118E5C1795C4C21C3E93 /* Support Files */,
+				F09AE75C0B84E1FCCF14006BA6E3C502 /* BackgroundVideo.swift */,
+				5C4F01127BEC22710A4147967C500346 /* SwiftVideoBackground.h */,
+				4363FC1506DF00F1A21BCBEBF4EF2C79 /* Support Files */,
 			);
 			name = SwiftVideoBackground;
 			path = SwiftVideoBackground;
+			sourceTree = "<group>";
+		};
+		A9AB0BD10732959B52B267A61E7CC6D2 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				B4207BC3F4799301D67EFD7F74EB7418 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		B4207BC3F4799301D67EFD7F74EB7418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D622F5CBBF49A7E47E5D1341CDDCC4B /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86122A6B929504526FC78D132C28F13 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				0E642D13900F1856EAFC9658AAEE71A7 /* Defines */,
+				4023BDB4055D300BDDAE90F36B68B98C /* NSData+zlib */,
+				DA496CF9459D2DB00E1DB426FE029F72 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -297,37 +261,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C32C091D07D23DE91548CA62BAF08A57 /* FirebaseInstanceID */ = {
+		C85541B4D82446CE7FC838C540465EC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60DA6904145878D0AAA6A6B4D1B702BA /* Frameworks */,
+				5108330016B8EC9EA50B545D609BC2B7 /* FirebaseInstanceID.framework */,
 			);
-			name = FirebaseInstanceID;
-			path = FirebaseInstanceID;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9C81C1A2EB50FCDC4A2024FA5AEBEA9 /* FirebaseDatabase */ = {
+		CC102D0A2F42DF4D9404227C614091EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90C111FADAE6C5B4948BF8F86327E5A4 /* Frameworks */,
+				F385A1E265FC4D26003D0D397791E732 /* GoogleToolboxForMac.framework */,
+				F4BAEFBBE789F837251F718ED3770F9B /* Pods_Aloha.framework */,
+				F209EF51CFFB3AAD448A1701C490C080 /* SwiftVideoBackground.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8F5DD902FBC100E475784573FD49DDB /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				FA4EF0DE6741A956749920DAF0317EC4 /* Frameworks */,
 			);
 			name = FirebaseDatabase;
 			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
-		CB447FEB32F49344114A3C680537DD4A /* Pods */ = {
+		DA496CF9459D2DB00E1DB426FE029F72 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				919C8204BD263DCA44B0CF9F24BBEE9E /* Firebase */,
-				ECC8A24C2F1595AC805750337DB68C56 /* FirebaseAnalytics */,
-				1CFE43BDAD6B06FBDF252FFA2AFC75B0 /* FirebaseCore */,
-				C9C81C1A2EB50FCDC4A2024FA5AEBEA9 /* FirebaseDatabase */,
-				C32C091D07D23DE91548CA62BAF08A57 /* FirebaseInstanceID */,
-				845EECF7EED8A858A5BA37CE4FA37466 /* GoogleToolboxForMac */,
-				0417A01C57F1E74D484CA1CF79336292 /* LFHeatMap */,
-				B4B72AE4082E2305AF8C437FB62F072D /* SwiftVideoBackground */,
+				B93048A5F8CD9BCDFC3851F11A2F53F1 /* GoogleToolboxForMac.modulemap */,
+				3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */,
+				C6E9A566A1D8783C9E5586E9C8E2BB1B /* GoogleToolboxForMac-dummy.m */,
+				F2B2CEFAF7C3368C5DF0463466870C3F /* GoogleToolboxForMac-prefix.pch */,
+				235B63642FC95D98460A8BA02F0D9543 /* GoogleToolboxForMac-umbrella.h */,
+				A9BF2950E28392F5E6599B899A21D624 /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
 			sourceTree = "<group>";
 		};
 		DBDD6593C9A6F1625CC87BFC15E2777C /* Pods-Aloha */ = {
@@ -348,47 +320,19 @@
 			path = "Target Support Files/Pods-Aloha";
 			sourceTree = "<group>";
 		};
-		EBD3A0C04D07FFBFCFB4C5FB133AD2E9 /* Support Files */ = {
+		F207EA7444929B65F4872C5EB58B03B8 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				511918242B0E4533973747C3DD67063E /* Info.plist */,
-				783744E5E45BD3BA88DE270BECC6903F /* LFHeatMap.modulemap */,
-				EC5591DD43AED4757205275B28E331A1 /* LFHeatMap.xcconfig */,
-				DE78EB7E04EA57A030C40CE1A9EAEA33 /* LFHeatMap-dummy.m */,
-				397E9D7F75E768CB0C9BCE58F42BCFE9 /* LFHeatMap-prefix.pch */,
-				C696176118F6BC80F21FD8FD893FE297 /* LFHeatMap-umbrella.h */,
+				C85541B4D82446CE7FC838C540465EC5 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/LFHeatMap";
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		ECC8A24C2F1595AC805750337DB68C56 /* FirebaseAnalytics */ = {
+		FA4EF0DE6741A956749920DAF0317EC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FBBC54B8F9B84D7E812845AA00E76E01 /* Frameworks */,
-			);
-			name = FirebaseAnalytics;
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		FA4BFE85233ECC0F93E2D53C29A50DC3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BA87EF6A1CE82A3D525B228BE8EA5020 /* GoogleToolboxForMac.modulemap */,
-				84342D42AD586B0605AC2561DC879320 /* GoogleToolboxForMac.xcconfig */,
-				6FF3BD71CD91D0FFC32B9FA313703B63 /* GoogleToolboxForMac-dummy.m */,
-				4C356750D81D19C92B2C313658E18A48 /* GoogleToolboxForMac-prefix.pch */,
-				6E709FD86CB916D7A964D1747D120C07 /* GoogleToolboxForMac-umbrella.h */,
-				0FEE442D84E018ABC0E449866C8A4A63 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
-			sourceTree = "<group>";
-		};
-		FBBC54B8F9B84D7E812845AA00E76E01 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B3E89B79ACDDD9200B9F58F3D3995861 /* FirebaseAnalytics.framework */,
+				1AC377D163A2B091BD9254E606FC5A79 /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,29 +340,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6C1A5B99749EC6C3650A8678BBB2CC75 /* Headers */ = {
+		4036A52BA16C7CAAE434D98295C3EC8D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC42A33304520A2235701F260140127A /* LFHeatMap-umbrella.h in Headers */,
-				0D26CCF268947D1E746810A8AFB16AFC /* LFHeatMap.h in Headers */,
+				188F26B521DE2FB39431AE4429D4695A /* Pods-Aloha-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DD179548C799DA55758D57401E645E0 /* Headers */ = {
+		DBEE8A8B03C8196E739797272DE64CDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5235689C9E9FAC2D6D4C22284B5A5C34 /* SwiftVideoBackground-umbrella.h in Headers */,
-				7F8A2C18A6E00965E7979CF46357FB70 /* SwiftVideoBackground.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D09D6D9DCCA7EA01E9185D4EC3B60336 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E9513FB877B168D7AFF506E647D4302 /* Pods-Aloha-umbrella.h in Headers */,
+				3E72EA36C2E77873CCBC444C8A2035C3 /* SwiftVideoBackground-umbrella.h in Headers */,
+				2D4636F5E26D7B2E8F64C85B361577E4 /* SwiftVideoBackground.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,33 +384,16 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 492A735CEF072D7E4A0F938F9C5066FE /* GoogleToolboxForMac.framework */;
+			productReference = F385A1E265FC4D26003D0D397791E732 /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		330017488B7BBC37CD89B9432AB25025 /* LFHeatMap */ = {
+		4D1371720C08807E7BA167DA492B80EC /* SwiftVideoBackground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4B33B26C753B959FD828AB19EE874B1 /* Build configuration list for PBXNativeTarget "LFHeatMap" */;
+			buildConfigurationList = 76A74D124C6124FB830F9E43C3E45188 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */;
 			buildPhases = (
-				44E793C5BE9D10AD6E5A3B704113B611 /* Sources */,
-				0DF0D9810C96CD24F9408641AC0C454C /* Frameworks */,
-				6C1A5B99749EC6C3650A8678BBB2CC75 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LFHeatMap;
-			productName = LFHeatMap;
-			productReference = 910813C409C466990F709C2DB31BE218 /* LFHeatMap.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3D4B9F4ADAE06EE0186DDCB91672C79A /* SwiftVideoBackground */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 558A1C55880694F1F0F100692F845A18 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */;
-			buildPhases = (
-				524656C5E57CAFED1C7FCCCC7A240468 /* Sources */,
-				FF0278FAFE8E15CEC0F7211A76F04D59 /* Frameworks */,
-				7DD179548C799DA55758D57401E645E0 /* Headers */,
+				1478DC5F5A483472B3EDC66ED31154D8 /* Sources */,
+				964D6B419593DF8672F7CF18790EB063 /* Frameworks */,
+				DBEE8A8B03C8196E739797272DE64CDD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -483,27 +401,26 @@
 			);
 			name = SwiftVideoBackground;
 			productName = SwiftVideoBackground;
-			productReference = 1CE53B30EFCD1531EE2BC98A9D3DCEAE /* SwiftVideoBackground.framework */;
+			productReference = F209EF51CFFB3AAD448A1701C490C080 /* SwiftVideoBackground.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		589834EB4FF3529ABA08297BFEAFA3EA /* Pods-Aloha */ = {
+		E97C1BB2A57CF2C8D20FA2D0F87B9C19 /* Pods-Aloha */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 749F5F32ACEB0C5E767FF7429D578969 /* Build configuration list for PBXNativeTarget "Pods-Aloha" */;
+			buildConfigurationList = 486FDEF479677E70D26917846A24F1BE /* Build configuration list for PBXNativeTarget "Pods-Aloha" */;
 			buildPhases = (
-				7C9C2569A6E7B638687E6B1CCA79187F /* Sources */,
-				B7D8165E3FBC4F0AD4D2B56016583CBA /* Frameworks */,
-				D09D6D9DCCA7EA01E9185D4EC3B60336 /* Headers */,
+				D4EC957D658C048D2DC0B5DF49A044AD /* Sources */,
+				493587F05E80F32B487609F390A9CA59 /* Frameworks */,
+				4036A52BA16C7CAAE434D98295C3EC8D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				85133D3AD37E18022B873456232E8E38 /* PBXTargetDependency */,
-				F6A605736C5C38F9B8CF6CA6215ABE81 /* PBXTargetDependency */,
-				E5F9C998FE5CF53C13B4A96FCDE6BA62 /* PBXTargetDependency */,
+				72A26B2E9DA011F231F54D0A3DB122F3 /* PBXTargetDependency */,
+				11E714F6AE7837FBB289CD5C522CA6DB /* PBXTargetDependency */,
 			);
 			name = "Pods-Aloha";
 			productName = "Pods-Aloha";
-			productReference = 4082C506A789470650AC2B77AE1CFC91 /* Pods_Aloha.framework */;
+			productReference = F4BAEFBBE789F837251F718ED3770F9B /* Pods_Aloha.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -523,34 +440,24 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 608D0F74AC8D7CD427B105022CCC9A5E /* Products */;
+			productRefGroup = CC102D0A2F42DF4D9404227C614091EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
-				330017488B7BBC37CD89B9432AB25025 /* LFHeatMap */,
-				589834EB4FF3529ABA08297BFEAFA3EA /* Pods-Aloha */,
-				3D4B9F4ADAE06EE0186DDCB91672C79A /* SwiftVideoBackground */,
+				E97C1BB2A57CF2C8D20FA2D0F87B9C19 /* Pods-Aloha */,
+				4D1371720C08807E7BA167DA492B80EC /* SwiftVideoBackground */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		44E793C5BE9D10AD6E5A3B704113B611 /* Sources */ = {
+		1478DC5F5A483472B3EDC66ED31154D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E96087D260638A6B5D2F3F5155EA567 /* LFHeatMap-dummy.m in Sources */,
-				EFE4AA17046F851B0CF457D16CF1D027 /* LFHeatMap.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		524656C5E57CAFED1C7FCCCC7A240468 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA5A5DC3A8C2ABF0F062ACE15F4178F0 /* BackgroundVideo.swift in Sources */,
-				F56FC83F80D866E3B3763FFEB88EF86D /* SwiftVideoBackground-dummy.m in Sources */,
+				B91D959B5DEA4EFD6B8A784C0AE4C929 /* BackgroundVideo.swift in Sources */,
+				CD258614753A52AF793DA8F2D4A9E9BF /* SwiftVideoBackground-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,41 +470,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C9C2569A6E7B638687E6B1CCA79187F /* Sources */ = {
+		D4EC957D658C048D2DC0B5DF49A044AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ECDEBB070034181281A724A8B560546 /* Pods-Aloha-dummy.m in Sources */,
+				99A7675CB2D2FF9528D7527DA46CB2D9 /* Pods-Aloha-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85133D3AD37E18022B873456232E8E38 /* PBXTargetDependency */ = {
+		11E714F6AE7837FBB289CD5C522CA6DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftVideoBackground;
+			target = 4D1371720C08807E7BA167DA492B80EC /* SwiftVideoBackground */;
+			targetProxy = 5D368F98325B21226E9F2E773BBB4F79 /* PBXContainerItemProxy */;
+		};
+		72A26B2E9DA011F231F54D0A3DB122F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
 			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
-			targetProxy = EFD69246ACE5E46BEF3531D4717D106D /* PBXContainerItemProxy */;
-		};
-		E5F9C998FE5CF53C13B4A96FCDE6BA62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftVideoBackground;
-			target = 3D4B9F4ADAE06EE0186DDCB91672C79A /* SwiftVideoBackground */;
-			targetProxy = 8EEEA9DD4FE250022D9D0AAEC6163665 /* PBXContainerItemProxy */;
-		};
-		F6A605736C5C38F9B8CF6CA6215ABE81 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LFHeatMap;
-			target = 330017488B7BBC37CD89B9432AB25025 /* LFHeatMap */;
-			targetProxy = C8E2378559C745821DE68A3750730A03 /* PBXContainerItemProxy */;
+			targetProxy = 31EE88A193C62E1B7BAAD0AD0F057EE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04D0839E712D1DB0C7FD2BF38C68C855 /* Debug */ = {
+		0CEFE1EC07836144CAC10DF3A6C76B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC5591DD43AED4757205275B28E331A1 /* LFHeatMap.xcconfig */;
+			baseConfigurationReference = C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -610,114 +511,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LFHeatMap/LFHeatMap-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LFHeatMap/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LFHeatMap/LFHeatMap.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LFHeatMap;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4491FD447B0C1B72A7CD576883D52938 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC5591DD43AED4757205275B28E331A1 /* LFHeatMap.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LFHeatMap/LFHeatMap-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LFHeatMap/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LFHeatMap/LFHeatMap.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LFHeatMap;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4CB1D200A8EA0227F6796E9D4C4FCA36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD90962803286CAC2F22FB0147319248 /* SwiftVideoBackground.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftVideoBackground;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5947D0E881E52B115C3FFDA97542A0C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD90962803286CAC2F22FB0147319248 /* SwiftVideoBackground.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftVideoBackground;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aloha;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -764,9 +572,76 @@
 			};
 			name = Release;
 		};
+		81755A04DBF392343567248433FCB999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aloha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA5B5B915557079059D426528121EEDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftVideoBackground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D60CD877A708870E2BE96B83BA32F883 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84342D42AD586B0605AC2561DC879320 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -790,42 +665,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D706C1FEEB233C2153DBE620BE020DAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Aloha;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -876,44 +715,9 @@
 			};
 			name = Debug;
 		};
-		E7D905D5F8A729BB53229797DA18539D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Aloha;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F066921CBDBDB5F45795E50FBC5AC972 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84342D42AD586B0605AC2561DC879320 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -943,6 +747,39 @@
 			};
 			name = Release;
 		};
+		FAB3C4B67092A366467091ED5FF498FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftVideoBackground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -955,29 +792,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		558A1C55880694F1F0F100692F845A18 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */ = {
+		486FDEF479677E70D26917846A24F1BE /* Build configuration list for PBXNativeTarget "Pods-Aloha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5947D0E881E52B115C3FFDA97542A0C8 /* Debug */,
-				4CB1D200A8EA0227F6796E9D4C4FCA36 /* Release */,
+				0CEFE1EC07836144CAC10DF3A6C76B99 /* Debug */,
+				81755A04DBF392343567248433FCB999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		749F5F32ACEB0C5E767FF7429D578969 /* Build configuration list for PBXNativeTarget "Pods-Aloha" */ = {
+		76A74D124C6124FB830F9E43C3E45188 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D706C1FEEB233C2153DBE620BE020DAC /* Debug */,
-				E7D905D5F8A729BB53229797DA18539D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B4B33B26C753B959FD828AB19EE874B1 /* Build configuration list for PBXNativeTarget "LFHeatMap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04D0839E712D1DB0C7FD2BF38C68C855 /* Debug */,
-				4491FD447B0C1B72A7CD576883D52938 /* Release */,
+				FAB3C4B67092A366467091ED5FF498FD /* Debug */,
+				CA5B5B915557079059D426528121EEDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

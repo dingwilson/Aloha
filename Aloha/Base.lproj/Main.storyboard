@@ -270,43 +270,55 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-3R-FqE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17h-g2-b29">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIM-vA-4tu">
-                                <rect key="frame" x="16" y="28" width="145" height="50"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immediate (~ 1 meter):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJx-xd-Scs">
+                                <rect key="frame" x="16" y="411" width="343" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="gnq-V1-dsq"/>
+                                    <constraint firstAttribute="height" constant="51" id="0lU-QT-ZBl"/>
                                 </constraints>
-                                <state key="normal" title="Create Heatmap">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didPressHeatMapButton:" destination="xeH-fB-olG" eventType="touchUpInside" id="5av-wa-uZ4"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3294117647" green="0.70196078429999997" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Near (~ 50 feet):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc8-lW-wvB">
+                                <rect key="frame" x="16" y="470" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="2U3-Xo-l5R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9247096255276076" green="1" blue="0.062568109510989678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Far (~ 100 feet):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKI-PO-liw">
+                                <rect key="frame" x="16" y="529" width="343" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fGQ-3R-FqE" secondAttribute="trailing" id="52s-zj-Zie"/>
-                            <constraint firstItem="QIM-vA-4tu" firstAttribute="leading" secondItem="7ib-Ka-hbN" secondAttribute="leadingMargin" id="9Ja-Gf-PJB"/>
-                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="bottom" secondItem="1i9-z5-LrX" secondAttribute="top" id="DWQ-Kq-FwU"/>
-                            <constraint firstItem="17h-g2-b29" firstAttribute="top" secondItem="fGQ-3R-FqE" secondAttribute="top" id="EcA-NE-bfF"/>
-                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="leading" secondItem="17h-g2-b29" secondAttribute="leading" id="eJP-Wr-kFB"/>
-                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="leading" secondItem="7ib-Ka-hbN" secondAttribute="leading" id="eg7-D1-PeM"/>
-                            <constraint firstItem="17h-g2-b29" firstAttribute="bottom" secondItem="1i9-z5-LrX" secondAttribute="top" id="lFf-ZS-EcQ"/>
-                            <constraint firstItem="QIM-vA-4tu" firstAttribute="top" secondItem="Ikz-Re-MUS" secondAttribute="bottom" constant="8" symbolic="YES" id="seR-Kj-faA"/>
-                            <constraint firstItem="1i9-z5-LrX" firstAttribute="top" secondItem="QIM-vA-4tu" secondAttribute="bottom" constant="540" id="tec-vM-buL"/>
-                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="top" secondItem="7ib-Ka-hbN" secondAttribute="top" id="ywc-AW-bhv"/>
-                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="trailing" secondItem="17h-g2-b29" secondAttribute="trailing" id="zlB-By-1t1"/>
+                            <constraint firstItem="HJx-xd-Scs" firstAttribute="leading" secondItem="7ib-Ka-hbN" secondAttribute="leadingMargin" id="6WK-DZ-hjF"/>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="leading" secondItem="7ib-Ka-hbN" secondAttribute="leading" id="8hy-AK-2gs"/>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="top" secondItem="7ib-Ka-hbN" secondAttribute="top" id="9Q2-dG-N9C"/>
+                            <constraint firstItem="vc8-lW-wvB" firstAttribute="trailing" secondItem="fKI-PO-liw" secondAttribute="trailing" id="9ml-Gs-c78"/>
+                            <constraint firstItem="1i9-z5-LrX" firstAttribute="top" secondItem="fKI-PO-liw" secondAttribute="bottom" constant="38" id="LCq-MN-MBd"/>
+                            <constraint firstItem="fKI-PO-liw" firstAttribute="top" secondItem="vc8-lW-wvB" secondAttribute="bottom" constant="8" symbolic="YES" id="Rr7-mB-g9w"/>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="centerX" secondItem="HJx-xd-Scs" secondAttribute="centerX" id="Sev-Qv-2Lq"/>
+                            <constraint firstItem="vc8-lW-wvB" firstAttribute="leading" secondItem="fKI-PO-liw" secondAttribute="leading" id="UsG-be-1a9"/>
+                            <constraint firstItem="HJx-xd-Scs" firstAttribute="top" secondItem="Ikz-Re-MUS" secondAttribute="bottom" constant="391" id="VFm-zE-V40"/>
+                            <constraint firstItem="vc8-lW-wvB" firstAttribute="top" secondItem="HJx-xd-Scs" secondAttribute="bottom" constant="8" symbolic="YES" id="X63-pc-XfF"/>
+                            <constraint firstItem="HJx-xd-Scs" firstAttribute="leading" secondItem="vc8-lW-wvB" secondAttribute="leading" id="hVD-if-dHC"/>
+                            <constraint firstItem="HJx-xd-Scs" firstAttribute="trailing" secondItem="vc8-lW-wvB" secondAttribute="trailing" id="les-Dd-axr"/>
+                            <constraint firstAttribute="trailing" secondItem="fGQ-3R-FqE" secondAttribute="trailing" id="oUp-Q5-WAh"/>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="bottom" secondItem="1i9-z5-LrX" secondAttribute="top" id="udp-ox-HER"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Heatmap" image="HeatMap" id="ocL-Wo-O4C"/>
                     <connections>
-                        <outlet property="heatMapButton" destination="QIM-vA-4tu" id="fzk-VT-Hny"/>
-                        <outlet property="heatMapImageView" destination="17h-g2-b29" id="O0z-jY-QvJ"/>
+                        <outlet property="farLabel" destination="fKI-PO-liw" id="5t8-9v-ri4"/>
+                        <outlet property="immediateLabel" destination="HJx-xd-Scs" id="aBR-57-Kyb"/>
                         <outlet property="mapView" destination="fGQ-3R-FqE" id="y4h-MA-BPM"/>
+                        <outlet property="nearLabel" destination="vc8-lW-wvB" id="Jof-VT-ED2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEA-5N-joV" userLabel="First Responder" sceneMemberID="firstResponder"/>
