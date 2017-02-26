@@ -279,7 +279,7 @@
                             <constraint firstItem="fGQ-3R-FqE" firstAttribute="bottom" secondItem="1i9-z5-LrX" secondAttribute="top" id="zoi-yX-bAs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Heatmap" id="ocL-Wo-O4C"/>
+                    <tabBarItem key="tabBarItem" title="Heatmap" image="HeatMap" id="ocL-Wo-O4C"/>
                     <connections>
                         <outlet property="mapView" destination="fGQ-3R-FqE" id="y4h-MA-BPM"/>
                     </connections>
@@ -431,6 +431,7 @@
     <resources>
         <image name="DemoIcon" width="36" height="36"/>
         <image name="DeviceList" width="36" height="36"/>
+        <image name="HeatMap" width="36" height="36"/>
         <image name="SettingsIcon" width="36" height="36"/>
         <image name="TransparentIcon" width="512" height="512"/>
     </resources>
