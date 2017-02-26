@@ -27,10 +27,10 @@ class DemoViewController: UIViewController {
     
     var userList = [(Int, String, String)]()
     
-    var currentUser : String!
-    var currentUserType: String!
-    var currentMinor : Int!
-    var currentTime : Int!
+    var currentUser : String = "My Friend"
+    var currentUserType: String = "Thank you for being amazing. :)"
+    var currentMinor : Int = 999999
+    var currentTime : Int = 0
     
     var totalImpressions : Int!
     
@@ -44,6 +44,10 @@ class DemoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        messageLabel.isHidden = true
+        timeLabel.isHidden = true
+        totalImpressionsLabel.isHidden = true
         
         userList = [(Int, String, String)]()
         
@@ -71,6 +75,10 @@ class DemoViewController: UIViewController {
         super.viewDidAppear(animated)
         
         currentTime = 0
+        
+        while currentUser == nil {
+            findClosestBeacon()
+        }
         
         let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
         
@@ -138,30 +146,27 @@ class DemoViewController: UIViewController {
             }
         }
         
-        if let current = self.currentMinor {
-            if closestMinor != current {
+        if let closest = closestMinor {
+            if closest != self.currentMinor {
                 currentTime = 0
                 currentMinor = closestMinor
                 currentUser = closestName!
                 currentUserType = closestType!
             }
-        } else {
-            currentTime = 0
-            currentMinor = closestMinor
-            currentUser = closestName!
-            currentUserType = closestType!
         }
     }
     
     func updateTime() {
         findClosestBeacon()
         
+        timeLabel.isHidden = false
+        
         currentTime = currentTime + 1
-        timeLabel.text = "You have been here for \(currentTime!) seconds."
+        timeLabel.text = "You have been here for \(currentTime) seconds."
         
         nameLabel.text = currentUser
         
-        switch(currentUserType!) {
+        switch(currentUserType) {
         case "Hacker":
             messageLabel.text = "Thank you for hacking with us at Buildathon!"
             break
@@ -181,6 +186,10 @@ class DemoViewController: UIViewController {
             messageLabel.text = "Thank you for being amazing. :)"
             break
         }
+        
+        messageLabel.isHidden = false
+        
+        totalImpressionsLabel.isHidden = false
     }
     
     func updateValues() {

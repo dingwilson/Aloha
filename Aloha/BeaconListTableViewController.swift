@@ -133,7 +133,7 @@ extension BeaconListTableViewController: CLLocationManagerDelegate {
                 }
             }
         }
-
+        
         tableView.reloadData()
     }
 }
