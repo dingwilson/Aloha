@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import FirebaseDatabase
 
 class BeaconListTableViewController: UITableViewController {
     
@@ -15,32 +16,35 @@ class BeaconListTableViewController: UITableViewController {
     
     var beaconList = [(CLBeaconRegion, CLBeacon)]()
     
+    var ref: FIRDatabaseReference!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ref = FIRDatabase.database().reference()
+        
+        updateMinors()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // 1
         if CLLocationManager.isRangingAvailable() {
-            // 2
             manager = CLLocationManager()
             manager!.delegate = self
-            
-            // 3
+
             manager!.requestWhenInUseAuthorization()
-            
-            // 4
+
             let beaconRegions = [CLBeaconRegion(proximityUUID: NSUUID(uuidString: "637DBAD2-7B9E-4E9F-930E-01D7C3AEC175")! as UUID, identifier: "Freeman")]
-            
-            // 5
+
             beaconRegions.forEach(manager!.startRangingBeacons)
         } else {
-            // 6
             let alert = UIAlertController(title: "Unsupported", message: "Beacon ranging unavailable on this device.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default) { alertAction -> Void in
                 self.navigationController?.popViewController(animated: true)
             })
             self.present(alert, animated: true, completion: nil)
         }
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,6 +52,22 @@ class BeaconListTableViewController: UITableViewController {
         
         if let rangedRegions = manager?.rangedRegions as? Set<CLBeaconRegion> {
             rangedRegions.forEach(manager!.stopRangingBeacons)
+        }
+    }
+    
+    func updateMinors() {
+        ref.child("beacons").observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            let name = value?["name"] as? String ?? ""
+            
+            if name != nil {
+                print(name)
+            } else {
+                print("Hello")
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
         }
     }
 }
