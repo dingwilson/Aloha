@@ -14,6 +14,8 @@
 		C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */; };
 		C8E5D2981E62B963007EFC60 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2971E62B963007EFC60 /* SplashViewController.swift */; };
 		C8E5D29A1E62B9BF007EFC60 /* Background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D2991E62B9BF007EFC60 /* Background.mp4 */; };
+		C8E5D29C1E62BE3D007EFC60 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D29B1E62BE3D007EFC60 /* SettingsViewController.swift */; };
+		C8E5D29E1E62BEF0007EFC60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D29D1E62BEF0007EFC60 /* GoogleService-Info.plist */; };
 		F642DC42B07D0AC6138BEF4D /* Pods_Aloha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CDAB551A76113596E0DAB3 /* Pods_Aloha.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconListTableViewController.swift; sourceTree = "<group>"; };
 		C8E5D2971E62B963007EFC60 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		C8E5D2991E62B9BF007EFC60 /* Background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Background.mp4; sourceTree = "<group>"; };
+		C8E5D29B1E62BE3D007EFC60 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C8E5D29D1E62BEF0007EFC60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1CE7AB58115EE49ECE1C774 /* Pods-Aloha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aloha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aloha/Pods-Aloha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,10 +81,12 @@
 				C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */,
 				C8E5D2971E62B963007EFC60 /* SplashViewController.swift */,
 				C8E5D2671E62B0C3007EFC60 /* Main.storyboard */,
+				C8E5D29B1E62BE3D007EFC60 /* SettingsViewController.swift */,
 				C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */,
 				C8E5D2991E62B9BF007EFC60 /* Background.mp4 */,
 				C8E5D26C1E62B0C3007EFC60 /* LaunchScreen.storyboard */,
 				C8E5D26F1E62B0C3007EFC60 /* Info.plist */,
+				C8E5D29D1E62BEF0007EFC60 /* GoogleService-Info.plist */,
 			);
 			path = Aloha;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			files = (
 				C8E5D26E1E62B0C3007EFC60 /* LaunchScreen.storyboard in Resources */,
 				C8E5D29A1E62B9BF007EFC60 /* Background.mp4 in Resources */,
+				C8E5D29E1E62BEF0007EFC60 /* GoogleService-Info.plist in Resources */,
 				C8E5D26B1E62B0C3007EFC60 /* Assets.xcassets in Resources */,
 				C8E5D2691E62B0C3007EFC60 /* Main.storyboard in Resources */,
 			);
@@ -222,6 +229,7 @@
 				C8E5D2981E62B963007EFC60 /* SplashViewController.swift in Sources */,
 				C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */,
 				C8E5D2641E62B0C3007EFC60 /* AppDelegate.swift in Sources */,
+				C8E5D29C1E62BE3D007EFC60 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

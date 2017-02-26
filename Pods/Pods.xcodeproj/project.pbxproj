@@ -7,94 +7,162 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19B9434CC44D3B59E3C7FEE4C51D793C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		21488A10A4CE8A8511B5A89241B6B910 /* SwiftVideoBackground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2081D0E9D1828EF6B802892BFC88A7 /* SwiftVideoBackground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		307942D0364567DA84285FCA4B1D5637 /* Pods-Aloha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */; };
-		74086BC3072A9E5FB2DEDCC99DA132C1 /* SwiftVideoBackground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8FAFA6CC6C95399EC10BC6D256FABD /* SwiftVideoBackground-dummy.m */; };
-		83A8FF309A29820249417F2ECF98739B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		A4719A373895D37B59D1F7616A6D15AE /* SwiftVideoBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AED86D146CC062E9DBA4C44656DEA98 /* SwiftVideoBackground.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3C0D50656F9D5D4095A6D54442857FE /* Pods-Aloha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8135C73B31152C7B8D16401DCB09FA2 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E07D960719F03D5BF17A8B0F9D9D0 /* BackgroundVideo.swift */; };
+		188F26B521DE2FB39431AE4429D4695A /* Pods-Aloha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D4636F5E26D7B2E8F64C85B361577E4 /* SwiftVideoBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4F01127BEC22710A4147967C500346 /* SwiftVideoBackground.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3E72EA36C2E77873CCBC444C8A2035C3 /* SwiftVideoBackground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68FAD1DF81B3C17275CB979090CF4A93 /* SwiftVideoBackground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE8ADA7CAE792CB47BFB59989A7D390 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67161E2222373F82DC4C9E3D560BA482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 235B63642FC95D98460A8BA02F0D9543 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99A7675CB2D2FF9528D7527DA46CB2D9 /* Pods-Aloha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */; };
+		B91D959B5DEA4EFD6B8A784C0AE4C929 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AE75C0B84E1FCCF14006BA6E3C502 /* BackgroundVideo.swift */; };
+		C4EF4D38DDA0924CE888A7BCC498CE83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CD258614753A52AF793DA8F2D4A9E9BF /* SwiftVideoBackground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 346A9BFA35830D07993B2793BD271405 /* SwiftVideoBackground-dummy.m */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = E13168EF9EC6D6E626176017C67F1171 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = D364042F3F42B03B3CF9812980BEB3F0 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9A566A1D8783C9E5586E9C8E2BB1B /* GoogleToolboxForMac-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D4110A8F642590E88CA5BDEC5FDE1D06 /* PBXContainerItemProxy */ = {
+		31EE88A193C62E1B7BAAD0AD0F057EE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A014B0D543115F83871143E5FBF32363;
+			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		5D368F98325B21226E9F2E773BBB4F79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1371720C08807E7BA167DA492B80EC;
 			remoteInfo = SwiftVideoBackground;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E2081D0E9D1828EF6B802892BFC88A7 /* SwiftVideoBackground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-umbrella.h"; sourceTree = "<group>"; };
 		1554711ADF1741BF6A539C7534130B0E /* Pods-Aloha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aloha-frameworks.sh"; sourceTree = "<group>"; };
-		2DF143D52C9FBB01AA3B6FBD77404377 /* SwiftVideoBackground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftVideoBackground.modulemap; sourceTree = "<group>"; };
-		3AED86D146CC062E9DBA4C44656DEA98 /* SwiftVideoBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftVideoBackground.h; path = SwiftVideoBackground/SwiftVideoBackground.h; sourceTree = "<group>"; };
+		1AC377D163A2B091BD9254E606FC5A79 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		235B63642FC95D98460A8BA02F0D9543 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		346A9BFA35830D07993B2793BD271405 /* SwiftVideoBackground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftVideoBackground-dummy.m"; sourceTree = "<group>"; };
+		3C88D59C98F9E9A0AB779D4EC5E12CFA /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		43801F565CECC00073BBD4192F310C42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACEA8FC0FA7832FE6A63A1A1D3793B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftVideoBackground.xcconfig; sourceTree = "<group>"; };
 		4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aloha-dummy.m"; sourceTree = "<group>"; };
+		5108330016B8EC9EA50B545D609BC2B7 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		55D1E963852FA47CEAAD70AACC3551DD /* Pods-Aloha-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aloha-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C4F01127BEC22710A4147967C500346 /* SwiftVideoBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftVideoBackground.h; path = SwiftVideoBackground/SwiftVideoBackground.h; sourceTree = "<group>"; };
 		5EB4AFB99670A8E7047E897319CC77B8 /* Pods-Aloha-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aloha-resources.sh"; sourceTree = "<group>"; };
+		5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftVideoBackground.xcconfig; sourceTree = "<group>"; };
+		68FAD1DF81B3C17275CB979090CF4A93 /* SwiftVideoBackground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-umbrella.h"; sourceTree = "<group>"; };
 		774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aloha-umbrella.h"; sourceTree = "<group>"; };
+		80486921A89E383C2ADAAF0DE3C7B96C /* SwiftVideoBackground-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AE8ADA7CAE792CB47BFB59989A7D390 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		9D622F5CBBF49A7E47E5D1341CDDCC4B /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		9EE0E3EFA8221221400F90C69035C77A /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aloha.release.xcconfig"; sourceTree = "<group>"; };
+		A9BF2950E28392F5E6599B899A21D624 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93048A5F8CD9BCDFC3851F11A2F53F1 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
 		C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aloha.debug.xcconfig"; sourceTree = "<group>"; };
+		C6E9A566A1D8783C9E5586E9C8E2BB1B /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CC45F9F21DC89EB265BF1444E10338B9 /* SwiftVideoBackground-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-prefix.pch"; sourceTree = "<group>"; };
-		D8F0A5C4AC8B942F749316BF74F949DF /* SwiftVideoBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftVideoBackground.framework; path = SwiftVideoBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D364042F3F42B03B3CF9812980BEB3F0 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		DB5319E3B699DFDC64994425527E5323 /* SwiftVideoBackground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftVideoBackground.modulemap; sourceTree = "<group>"; };
 		DD6E768F1E30C03637D3FC3B5D37BBAD /* Pods-Aloha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aloha-acknowledgements.plist"; sourceTree = "<group>"; };
+		E13168EF9EC6D6E626176017C67F1171 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
 		E14DB07A0B2D0BE768B2CE33AD759158 /* Pods-Aloha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Aloha.modulemap"; sourceTree = "<group>"; };
-		E84E07D960719F03D5BF17A8B0F9D9D0 /* BackgroundVideo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundVideo.swift; path = SwiftVideoBackground/BackgroundVideo.swift; sourceTree = "<group>"; };
-		EE8FAFA6CC6C95399EC10BC6D256FABD /* SwiftVideoBackground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftVideoBackground-dummy.m"; sourceTree = "<group>"; };
-		F43102A725A2FCAC7566068A946116B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCB014A077C242B49DF40BDF9CAB2374 /* Pods_Aloha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aloha.framework; path = "Pods-Aloha.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09AE75C0B84E1FCCF14006BA6E3C502 /* BackgroundVideo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundVideo.swift; path = SwiftVideoBackground/BackgroundVideo.swift; sourceTree = "<group>"; };
+		F209EF51CFFB3AAD448A1701C490C080 /* SwiftVideoBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftVideoBackground.framework; path = SwiftVideoBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B2CEFAF7C3368C5DF0463466870C3F /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		F385A1E265FC4D26003D0D397791E732 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BAEFBBE789F837251F718ED3770F9B /* Pods_Aloha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aloha.framework; path = "Pods-Aloha.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		537CE6303A1F02A30B3D021C6A9EEF07 /* Frameworks */ = {
+		493587F05E80F32B487609F390A9CA59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B9434CC44D3B59E3C7FEE4C51D793C /* Foundation.framework in Frameworks */,
+				C4EF4D38DDA0924CE888A7BCC498CE83 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9434DF8308DFC6C451F135B26C2631B6 /* Frameworks */ = {
+		964D6B419593DF8672F7CF18790EB063 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A8FF309A29820249417F2ECF98739B /* Foundation.framework in Frameworks */,
+				67161E2222373F82DC4C9E3D560BA482 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		258E51AA855AC31137B48C84C47630B2 /* Support Files */ = {
+		0E642D13900F1856EAFC9658AAEE71A7 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				F43102A725A2FCAC7566068A946116B0 /* Info.plist */,
-				2DF143D52C9FBB01AA3B6FBD77404377 /* SwiftVideoBackground.modulemap */,
-				4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */,
-				EE8FAFA6CC6C95399EC10BC6D256FABD /* SwiftVideoBackground-dummy.m */,
-				CC45F9F21DC89EB265BF1444E10338B9 /* SwiftVideoBackground-prefix.pch */,
-				0E2081D0E9D1828EF6B802892BFC88A7 /* SwiftVideoBackground-umbrella.h */,
+				9AE8ADA7CAE792CB47BFB59989A7D390 /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		135DA04DC6439712A105DF5CD6EB0C4A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				21D026751CB3DD88C043A52F077CF361 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		21D026751CB3DD88C043A52F077CF361 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0E3EFA8221221400F90C69035C77A /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		29187A0B84D26E89C7D66D61F854C311 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				7FA63FBD4FA2DDBE40A9F9AAB1693706 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		4023BDB4055D300BDDAE90F36B68B98C /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				E13168EF9EC6D6E626176017C67F1171 /* GTMNSData+zlib.h */,
+				D364042F3F42B03B3CF9812980BEB3F0 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		4363FC1506DF00F1A21BCBEBF4EF2C79 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43801F565CECC00073BBD4192F310C42 /* Info.plist */,
+				DB5319E3B699DFDC64994425527E5323 /* SwiftVideoBackground.modulemap */,
+				5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */,
+				346A9BFA35830D07993B2793BD271405 /* SwiftVideoBackground-dummy.m */,
+				80486921A89E383C2ADAAF0DE3C7B96C /* SwiftVideoBackground-prefix.pch */,
+				68FAD1DF81B3C17275CB979090CF4A93 /* SwiftVideoBackground-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftVideoBackground";
-			sourceTree = "<group>";
-		};
-		2BC77BAFD9170CFC4ADAB61F3B355C1D /* SwiftVideoBackground */ = {
-			isa = PBXGroup;
-			children = (
-				E84E07D960719F03D5BF17A8B0F9D9D0 /* BackgroundVideo.swift */,
-				3AED86D146CC062E9DBA4C44656DEA98 /* SwiftVideoBackground.h */,
-				258E51AA855AC31137B48C84C47630B2 /* Support Files */,
-			);
-			name = SwiftVideoBackground;
-			path = SwiftVideoBackground;
 			sourceTree = "<group>";
 		};
 		485C1B5D1C173BDE75E1FACBF284D6FC /* Targets Support Files */ = {
@@ -105,15 +173,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4E0CE5980078E9E05EEAA6850F61ADB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FCB014A077C242B49DF40BDF9CAB2374 /* Pods_Aloha.framework */,
-				D8F0A5C4AC8B942F749316BF74F949DF /* SwiftVideoBackground.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,23 +181,76 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		78FF8E955C0CD2B0DA199720A78E929E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2BC77BAFD9170CFC4ADAB61F3B355C1D /* SwiftVideoBackground */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				78FF8E955C0CD2B0DA199720A78E929E /* Pods */,
-				4E0CE5980078E9E05EEAA6850F61ADB0 /* Products */,
+				7F6FE6F733958D4C28D87A6F675C7705 /* Pods */,
+				CC102D0A2F42DF4D9404227C614091EA /* Products */,
 				485C1B5D1C173BDE75E1FACBF284D6FC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7F6FE6F733958D4C28D87A6F675C7705 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				135DA04DC6439712A105DF5CD6EB0C4A /* Firebase */,
+				A9AB0BD10732959B52B267A61E7CC6D2 /* FirebaseAnalytics */,
+				29187A0B84D26E89C7D66D61F854C311 /* FirebaseCore */,
+				D8F5DD902FBC100E475784573FD49DDB /* FirebaseDatabase */,
+				F207EA7444929B65F4872C5EB58B03B8 /* FirebaseInstanceID */,
+				B86122A6B929504526FC78D132C28F13 /* GoogleToolboxForMac */,
+				A3F0690F8EEFF9BD30F91B1E6B0E21C1 /* SwiftVideoBackground */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FA63FBD4FA2DDBE40A9F9AAB1693706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C88D59C98F9E9A0AB779D4EC5E12CFA /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3F0690F8EEFF9BD30F91B1E6B0E21C1 /* SwiftVideoBackground */ = {
+			isa = PBXGroup;
+			children = (
+				F09AE75C0B84E1FCCF14006BA6E3C502 /* BackgroundVideo.swift */,
+				5C4F01127BEC22710A4147967C500346 /* SwiftVideoBackground.h */,
+				4363FC1506DF00F1A21BCBEBF4EF2C79 /* Support Files */,
+			);
+			name = SwiftVideoBackground;
+			path = SwiftVideoBackground;
+			sourceTree = "<group>";
+		};
+		A9AB0BD10732959B52B267A61E7CC6D2 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				B4207BC3F4799301D67EFD7F74EB7418 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		B4207BC3F4799301D67EFD7F74EB7418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D622F5CBBF49A7E47E5D1341CDDCC4B /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86122A6B929504526FC78D132C28F13 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				0E642D13900F1856EAFC9658AAEE71A7 /* Defines */,
+				4023BDB4055D300BDDAE90F36B68B98C /* NSData+zlib */,
+				DA496CF9459D2DB00E1DB426FE029F72 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -147,6 +259,47 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C85541B4D82446CE7FC838C540465EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5108330016B8EC9EA50B545D609BC2B7 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC102D0A2F42DF4D9404227C614091EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F385A1E265FC4D26003D0D397791E732 /* GoogleToolboxForMac.framework */,
+				F4BAEFBBE789F837251F718ED3770F9B /* Pods_Aloha.framework */,
+				F209EF51CFFB3AAD448A1701C490C080 /* SwiftVideoBackground.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8F5DD902FBC100E475784573FD49DDB /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				FA4EF0DE6741A956749920DAF0317EC4 /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		DA496CF9459D2DB00E1DB426FE029F72 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B93048A5F8CD9BCDFC3851F11A2F53F1 /* GoogleToolboxForMac.modulemap */,
+				3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */,
+				C6E9A566A1D8783C9E5586E9C8E2BB1B /* GoogleToolboxForMac-dummy.m */,
+				F2B2CEFAF7C3368C5DF0463466870C3F /* GoogleToolboxForMac-prefix.pch */,
+				235B63642FC95D98460A8BA02F0D9543 /* GoogleToolboxForMac-umbrella.h */,
+				A9BF2950E28392F5E6599B899A21D624 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
 			sourceTree = "<group>";
 		};
 		DBDD6593C9A6F1625CC87BFC15E2777C /* Pods-Aloha */ = {
@@ -167,54 +320,80 @@
 			path = "Target Support Files/Pods-Aloha";
 			sourceTree = "<group>";
 		};
+		F207EA7444929B65F4872C5EB58B03B8 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				C85541B4D82446CE7FC838C540465EC5 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		FA4EF0DE6741A956749920DAF0317EC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC377D163A2B091BD9254E606FC5A79 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2684B9BABDDDFCF2227EED6F6CC391D4 /* Headers */ = {
+		4036A52BA16C7CAAE434D98295C3EC8D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C0D50656F9D5D4095A6D54442857FE /* Pods-Aloha-umbrella.h in Headers */,
+				188F26B521DE2FB39431AE4429D4695A /* Pods-Aloha-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26D5D0FCFBD6F64BF56E6CC8495E8B14 /* Headers */ = {
+		DBEE8A8B03C8196E739797272DE64CDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21488A10A4CE8A8511B5A89241B6B910 /* SwiftVideoBackground-umbrella.h in Headers */,
-				A4719A373895D37B59D1F7616A6D15AE /* SwiftVideoBackground.h in Headers */,
+				3E72EA36C2E77873CCBC444C8A2035C3 /* SwiftVideoBackground-umbrella.h in Headers */,
+				2D4636F5E26D7B2E8F64C85B361577E4 /* SwiftVideoBackground.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */,
+				DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2773E5D617062F73E4D4FEA72B3C5896 /* Pods-Aloha */ = {
+		00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F4FC8BA19F30BC41FF75F72621B400D /* Build configuration list for PBXNativeTarget "Pods-Aloha" */;
+			buildConfigurationList = C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
 			buildPhases = (
-				5034FD05587D7406D54C838FF677F383 /* Sources */,
-				537CE6303A1F02A30B3D021C6A9EEF07 /* Frameworks */,
-				2684B9BABDDDFCF2227EED6F6CC391D4 /* Headers */,
+				63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */,
+				F9BC43EEAF05BCB201B3D28C244AA7E1 /* Frameworks */,
+				FDA600FDC48ED17BA03DA2D85D4EDA97 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D4B57EA52771A4FBE15FC76A94988432 /* PBXTargetDependency */,
 			);
-			name = "Pods-Aloha";
-			productName = "Pods-Aloha";
-			productReference = FCB014A077C242B49DF40BDF9CAB2374 /* Pods_Aloha.framework */;
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = F385A1E265FC4D26003D0D397791E732 /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A014B0D543115F83871143E5FBF32363 /* SwiftVideoBackground */ = {
+		4D1371720C08807E7BA167DA492B80EC /* SwiftVideoBackground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EE066D3E9A7564C5A4BFBD2D60BE670 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */;
+			buildConfigurationList = 76A74D124C6124FB830F9E43C3E45188 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */;
 			buildPhases = (
-				F760AAF340FBDC716EA35EEEDB9282BD /* Sources */,
-				9434DF8308DFC6C451F135B26C2631B6 /* Frameworks */,
-				26D5D0FCFBD6F64BF56E6CC8495E8B14 /* Headers */,
+				1478DC5F5A483472B3EDC66ED31154D8 /* Sources */,
+				964D6B419593DF8672F7CF18790EB063 /* Frameworks */,
+				DBEE8A8B03C8196E739797272DE64CDD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -222,7 +401,26 @@
 			);
 			name = SwiftVideoBackground;
 			productName = SwiftVideoBackground;
-			productReference = D8F0A5C4AC8B942F749316BF74F949DF /* SwiftVideoBackground.framework */;
+			productReference = F209EF51CFFB3AAD448A1701C490C080 /* SwiftVideoBackground.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E97C1BB2A57CF2C8D20FA2D0F87B9C19 /* Pods-Aloha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 486FDEF479677E70D26917846A24F1BE /* Build configuration list for PBXNativeTarget "Pods-Aloha" */;
+			buildPhases = (
+				D4EC957D658C048D2DC0B5DF49A044AD /* Sources */,
+				493587F05E80F32B487609F390A9CA59 /* Frameworks */,
+				4036A52BA16C7CAAE434D98295C3EC8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72A26B2E9DA011F231F54D0A3DB122F3 /* PBXTargetDependency */,
+				11E714F6AE7837FBB289CD5C522CA6DB /* PBXTargetDependency */,
+			);
+			name = "Pods-Aloha";
+			productName = "Pods-Aloha";
+			productReference = F4BAEFBBE789F837251F718ED3770F9B /* Pods_Aloha.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -242,46 +440,98 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4E0CE5980078E9E05EEAA6850F61ADB0 /* Products */;
+			productRefGroup = CC102D0A2F42DF4D9404227C614091EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2773E5D617062F73E4D4FEA72B3C5896 /* Pods-Aloha */,
-				A014B0D543115F83871143E5FBF32363 /* SwiftVideoBackground */,
+				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
+				E97C1BB2A57CF2C8D20FA2D0F87B9C19 /* Pods-Aloha */,
+				4D1371720C08807E7BA167DA492B80EC /* SwiftVideoBackground */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5034FD05587D7406D54C838FF677F383 /* Sources */ = {
+		1478DC5F5A483472B3EDC66ED31154D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307942D0364567DA84285FCA4B1D5637 /* Pods-Aloha-dummy.m in Sources */,
+				B91D959B5DEA4EFD6B8A784C0AE4C929 /* BackgroundVideo.swift in Sources */,
+				CD258614753A52AF793DA8F2D4A9E9BF /* SwiftVideoBackground-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F760AAF340FBDC716EA35EEEDB9282BD /* Sources */ = {
+		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8135C73B31152C7B8D16401DCB09FA2 /* BackgroundVideo.swift in Sources */,
-				74086BC3072A9E5FB2DEDCC99DA132C1 /* SwiftVideoBackground-dummy.m in Sources */,
+				FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */,
+				F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EC957D658C048D2DC0B5DF49A044AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A7675CB2D2FF9528D7527DA46CB2D9 /* Pods-Aloha-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D4B57EA52771A4FBE15FC76A94988432 /* PBXTargetDependency */ = {
+		11E714F6AE7837FBB289CD5C522CA6DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftVideoBackground;
-			target = A014B0D543115F83871143E5FBF32363 /* SwiftVideoBackground */;
-			targetProxy = D4110A8F642590E88CA5BDEC5FDE1D06 /* PBXContainerItemProxy */;
+			target = 4D1371720C08807E7BA167DA492B80EC /* SwiftVideoBackground */;
+			targetProxy = 5D368F98325B21226E9F2E773BBB4F79 /* PBXContainerItemProxy */;
+		};
+		72A26B2E9DA011F231F54D0A3DB122F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
+			targetProxy = 31EE88A193C62E1B7BAAD0AD0F057EE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0CEFE1EC07836144CAC10DF3A6C76B99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aloha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,76 +572,7 @@
 			};
 			name = Release;
 		};
-		77FB74A6A2A7C8F6FF34F9165395A48D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftVideoBackground;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		91AF9B369F2B90E652D8F35FD7925788 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Aloha;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9346C2045E56C83B2EF200506406EBD5 /* Release */ = {
+		81755A04DBF392343567248433FCB999 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */;
 			buildSettings = {
@@ -426,9 +607,9 @@
 			};
 			name = Release;
 		};
-		A4083FA7AA05344BD6360A5CFD52D7B8 /* Release */ = {
+		CA5B5B915557079059D426528121EEDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */;
+			baseConfigurationReference = 5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -457,6 +638,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		D60CD877A708870E2BE96B83BA32F883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -502,6 +715,71 @@
 			};
 			name = Debug;
 		};
+		F066921CBDBDB5F45795E50FBC5AC972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D31F864FF0BBE158BFD0A2D05023012 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAB3C4B67092A366467091ED5FF498FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7106634BEF5A9FD80C86E8E3B40832 /* SwiftVideoBackground.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftVideoBackground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,20 +792,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EE066D3E9A7564C5A4BFBD2D60BE670 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */ = {
+		486FDEF479677E70D26917846A24F1BE /* Build configuration list for PBXNativeTarget "Pods-Aloha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77FB74A6A2A7C8F6FF34F9165395A48D /* Debug */,
-				A4083FA7AA05344BD6360A5CFD52D7B8 /* Release */,
+				0CEFE1EC07836144CAC10DF3A6C76B99 /* Debug */,
+				81755A04DBF392343567248433FCB999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F4FC8BA19F30BC41FF75F72621B400D /* Build configuration list for PBXNativeTarget "Pods-Aloha" */ = {
+		76A74D124C6124FB830F9E43C3E45188 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91AF9B369F2B90E652D8F35FD7925788 /* Debug */,
-				9346C2045E56C83B2EF200506406EBD5 /* Release */,
+				FAB3C4B67092A366467091ED5FF498FD /* Debug */,
+				CA5B5B915557079059D426528121EEDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60CD877A708870E2BE96B83BA32F883 /* Debug */,
+				F066921CBDBDB5F45795E50FBC5AC972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

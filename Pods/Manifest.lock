@@ -1,12 +1,40 @@
 PODS:
+  - Firebase (3.13.0):
+    - Firebase/Core (= 3.13.0)
+  - Firebase/Core (3.13.0):
+    - FirebaseAnalytics (= 3.7.0)
+    - FirebaseCore (= 3.5.0)
+  - Firebase/Database (3.13.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 3.1.2)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (3.1.2):
+    - FirebaseAnalytics (~> 3.7)
+  - FirebaseInstanceID (1.0.9)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - SwiftVideoBackground (0.04)
 
 DEPENDENCIES:
+  - Firebase
+  - Firebase/Database
   - SwiftVideoBackground
 
 SPEC CHECKSUMS:
+  Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: 1c0a13bf59bb95cdd19577252499f0ec6a03e999
+  FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   SwiftVideoBackground: c0253281fcda5047c36067cbb852d8061513058b
 
-PODFILE CHECKSUM: ff9c28ebf344b205ccdec09158921e9065ff8a60
+PODFILE CHECKSUM: d28617bc3a0e5760c03aa5496b2f0393e9e8dc33
 
 COCOAPODS: 1.2.0

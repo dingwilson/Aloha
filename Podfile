@@ -7,5 +7,7 @@ target 'Aloha' do
 
   # Pods for Aloha
   pod 'SwiftVideoBackground'
+  pod 'Firebase'
+  pod 'Firebase/Database'
 
 end
