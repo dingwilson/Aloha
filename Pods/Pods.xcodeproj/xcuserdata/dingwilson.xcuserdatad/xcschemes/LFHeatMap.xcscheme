@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CF5A3F1A1530921880E32ACC3F76C16F'
-               BlueprintName = 'DTMHeatmap'
+               BlueprintIdentifier = '330017488B7BBC37CD89B9432AB25025'
+               BlueprintName = 'LFHeatMap'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'DTMHeatmap.framework'>
+               BuildableName = 'LFHeatMap.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

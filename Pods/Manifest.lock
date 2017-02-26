@@ -1,5 +1,4 @@
 PODS:
-  - DTMHeatmap (1.0)
   - Firebase (3.13.0):
     - Firebase/Core (= 3.13.0)
   - Firebase/Core (3.13.0):
@@ -20,24 +19,25 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - LFHeatMap (1.0.2)
   - SwiftVideoBackground (0.04)
 
 DEPENDENCIES:
-  - DTMHeatmap
   - Firebase
   - Firebase/Database
+  - LFHeatMap
   - SwiftVideoBackground
 
 SPEC CHECKSUMS:
-  DTMHeatmap: f5588af0730fbfe78c75d6d013f1932d7d327ab2
   Firebase: 5bc34d7b5ff5792e3386c8b28dc6265deeab0da4
   FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
   FirebaseCore: 1c0a13bf59bb95cdd19577252499f0ec6a03e999
   FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  LFHeatMap: 433197b20e4d57a9502bc2a2a21300fa851ff3c6
   SwiftVideoBackground: c0253281fcda5047c36067cbb852d8061513058b
 
-PODFILE CHECKSUM: 12accb7ff2cdb3d8b3ecc8430c2d7f3ada7839d7
+PODFILE CHECKSUM: 76a9167ccfc773dc8864683d66df8b28a4053fcf
 
 COCOAPODS: 1.2.0

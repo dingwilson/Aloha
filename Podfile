@@ -9,5 +9,5 @@ target 'Aloha' do
   pod 'SwiftVideoBackground'
   pod 'Firebase'
   pod 'Firebase/Database'
-  pod 'DTMHeatmap'
+  pod 'LFHeatMap'
 end

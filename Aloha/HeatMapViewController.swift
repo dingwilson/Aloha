@@ -9,10 +9,13 @@
 import UIKit
 import MapKit
 import CoreLocation
+import LFHeatMap
 
 class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var heatMapImageView: UIImageView!
+    @IBOutlet weak var heatMapButton: UIButton!
     
     let mapSpan = 0.001
     
@@ -20,7 +23,11 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     var beaconList = [(CLBeaconRegion, CLBeacon)]()
     
-    var timer : Timer!
+    var locations : [CLLocation] = []
+    
+    var weights : [NSNumber] = []
+    
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +41,8 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.heatMapImageView.isHidden = true
         
         if CLLocationManager.isRangingAvailable() {
             locationManager = CLLocationManager()
@@ -51,6 +60,12 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
             })
             self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.createHeatMap), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -121,11 +136,22 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
             }
         }
         
-        print(beacons.count)
+        locations.append(CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude))
         
+        weights.append(NSNumber(integerLiteral: beacons.count))
     }
     
     func createHeatMap() {
+        let heatMapImage = LFHeatMap.heatMap(for: self.mapView, boost: 0.1, locations: self.locations as [AnyObject], weights: self.weights as [AnyObject]) as UIImage
         
+        self.heatMapImageView.isHidden = false
+        
+        self.heatMapImageView.image = heatMapImage
+        self.heatMapImageView.alpha = 0.75
     }
+    
+    @IBAction func didPressHeatMapButton(_ sender: Any) {
+        createHeatMap()
+    }
+    
 }
