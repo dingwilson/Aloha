@@ -119,19 +119,18 @@ extension BeaconListTableViewController {
 extension BeaconListTableViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-        
-        var outputText = "Ranged beacons count: \(beacons.count)\n\n"
-        beacons.forEach { beacon in
-            outputText += beacon.description.substring(from: beacon.description.range(of:"major:")!.lowerBound)
-            outputText += "\n\n"
-        }
-        //NSLog("%@", outputText)
 
         beacons.forEach { beacon in
             if let index = beaconList.index(where: { $0.1.proximityUUID.uuidString == beacon.proximityUUID.uuidString && $0.1.major == beacon.major && $0.1.minor == beacon.minor }) {
-                beaconList[index] = (region, beacon)
+                if beacon.proximity == .far {
+                    beaconList.remove(at: index)
+                } else {
+                    beaconList[index] = (region, beacon)
+                }
             } else {
-                beaconList.append((region, beacon))
+                if beacon.proximity == .immediate {
+                    beaconList.append((region, beacon))
+                }
             }
         }
 

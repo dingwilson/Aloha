@@ -25,7 +25,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aloha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osb-M4-d6h">
                                 <rect key="frame" x="16" y="20" width="343" height="82"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="0tg-Yb-Oxc"/>
+                                    <constraint firstAttribute="height" constant="82" id="n8K-qQ-Ua3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="92"/>
                                 <nil key="textColor"/>
@@ -34,7 +34,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deD-7y-NPr">
                                 <rect key="frame" x="16" y="110" width="343" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="RRd-hc-r1s"/>
+                                    <constraint firstAttribute="height" constant="26" id="QNQ-J1-6Lc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -43,12 +43,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for being amazing. :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXd-TK-g3P">
                                 <rect key="frame" x="16" y="144" width="343" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unique Impressions: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo3-BF-AD6">
-                                <rect key="frame" x="16" y="530" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -61,7 +55,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have been here for 0 seconds." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT4-ZY-myM">
                                 <rect key="frame" x="16" y="312" width="343" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="dKK-xW-Md1"/>
+                                    <constraint firstAttribute="height" constant="43" id="bs1-md-WDk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -70,24 +64,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Osb-M4-d6h" firstAttribute="trailing" secondItem="deD-7y-NPr" secondAttribute="trailing" id="1PR-Pl-GMQ"/>
-                            <constraint firstItem="wvr-jq-G1r" firstAttribute="top" secondItem="rmw-2x-KpA" secondAttribute="bottom" constant="38" id="6PU-f3-xPk"/>
-                            <constraint firstItem="Osb-M4-d6h" firstAttribute="leading" secondItem="deD-7y-NPr" secondAttribute="leading" id="B4M-8M-o9k"/>
-                            <constraint firstItem="Osb-M4-d6h" firstAttribute="top" secondItem="Epf-QT-VQr" secondAttribute="bottom" id="IOQ-bA-TCc"/>
-                            <constraint firstItem="eT4-ZY-myM" firstAttribute="centerY" secondItem="aZ3-al-nNh" secondAttribute="centerY" id="SZS-ab-XOP"/>
-                            <constraint firstItem="rmw-2x-KpA" firstAttribute="top" secondItem="Uo3-BF-AD6" secondAttribute="bottom" constant="8" symbolic="YES" id="T81-RN-zqq"/>
-                            <constraint firstItem="eT4-ZY-myM" firstAttribute="trailing" secondItem="Uo3-BF-AD6" secondAttribute="trailing" id="ZNW-KQ-9Wm"/>
-                            <constraint firstItem="Uo3-BF-AD6" firstAttribute="trailing" secondItem="rmw-2x-KpA" secondAttribute="trailing" id="cO3-zk-ni5"/>
-                            <constraint firstItem="Osb-M4-d6h" firstAttribute="trailing" secondItem="aZ3-al-nNh" secondAttribute="trailingMargin" id="dUd-kH-cA6"/>
-                            <constraint firstItem="TXd-TK-g3P" firstAttribute="top" secondItem="deD-7y-NPr" secondAttribute="bottom" constant="8" symbolic="YES" id="efD-kB-dul"/>
-                            <constraint firstItem="Uo3-BF-AD6" firstAttribute="leading" secondItem="rmw-2x-KpA" secondAttribute="leading" id="gaf-VU-pzo"/>
-                            <constraint firstItem="TXd-TK-g3P" firstAttribute="leading" secondItem="eT4-ZY-myM" secondAttribute="leading" id="gdA-K6-uW2"/>
-                            <constraint firstItem="deD-7y-NPr" firstAttribute="trailing" secondItem="TXd-TK-g3P" secondAttribute="trailing" id="haE-eE-LEf"/>
-                            <constraint firstItem="deD-7y-NPr" firstAttribute="top" secondItem="Osb-M4-d6h" secondAttribute="bottom" constant="8" symbolic="YES" id="lIl-XP-AKe"/>
-                            <constraint firstItem="deD-7y-NPr" firstAttribute="leading" secondItem="TXd-TK-g3P" secondAttribute="leading" id="n7d-tJ-82D"/>
-                            <constraint firstItem="TXd-TK-g3P" firstAttribute="trailing" secondItem="eT4-ZY-myM" secondAttribute="trailing" id="nCi-an-Smo"/>
-                            <constraint firstItem="eT4-ZY-myM" firstAttribute="leading" secondItem="Uo3-BF-AD6" secondAttribute="leading" id="qQg-e3-9u2"/>
-                            <constraint firstItem="Osb-M4-d6h" firstAttribute="leading" secondItem="aZ3-al-nNh" secondAttribute="leadingMargin" id="zCF-tJ-l4x"/>
+                            <constraint firstItem="deD-7y-NPr" firstAttribute="leading" secondItem="TXd-TK-g3P" secondAttribute="leading" id="011-0h-WRz"/>
+                            <constraint firstItem="TXd-TK-g3P" firstAttribute="top" secondItem="deD-7y-NPr" secondAttribute="bottom" constant="8" symbolic="YES" id="4DU-Hj-Hsf"/>
+                            <constraint firstItem="Osb-M4-d6h" firstAttribute="leading" secondItem="aZ3-al-nNh" secondAttribute="leadingMargin" id="BTl-eY-bcb"/>
+                            <constraint firstItem="eT4-ZY-myM" firstAttribute="trailing" secondItem="rmw-2x-KpA" secondAttribute="trailing" id="FVp-66-3Pk"/>
+                            <constraint firstItem="eT4-ZY-myM" firstAttribute="centerY" secondItem="aZ3-al-nNh" secondAttribute="centerY" id="Kr7-U7-N1H"/>
+                            <constraint firstItem="Osb-M4-d6h" firstAttribute="top" secondItem="Epf-QT-VQr" secondAttribute="bottom" id="LQG-e1-lvu"/>
+                            <constraint firstItem="deD-7y-NPr" firstAttribute="trailing" secondItem="TXd-TK-g3P" secondAttribute="trailing" id="LuK-WQ-Nfg"/>
+                            <constraint firstItem="Osb-M4-d6h" firstAttribute="trailing" secondItem="deD-7y-NPr" secondAttribute="trailing" id="VtT-t3-pHL"/>
+                            <constraint firstItem="eT4-ZY-myM" firstAttribute="leading" secondItem="rmw-2x-KpA" secondAttribute="leading" id="Vz9-Fm-D0E"/>
+                            <constraint firstItem="Osb-M4-d6h" firstAttribute="leading" secondItem="deD-7y-NPr" secondAttribute="leading" id="Xng-JP-uDQ"/>
+                            <constraint firstItem="TXd-TK-g3P" firstAttribute="leading" secondItem="eT4-ZY-myM" secondAttribute="leading" id="cia-Hu-EWf"/>
+                            <constraint firstItem="deD-7y-NPr" firstAttribute="top" secondItem="Osb-M4-d6h" secondAttribute="bottom" constant="8" symbolic="YES" id="gGD-RC-r7Q"/>
+                            <constraint firstItem="TXd-TK-g3P" firstAttribute="trailing" secondItem="eT4-ZY-myM" secondAttribute="trailing" id="gW6-Ay-mf5"/>
+                            <constraint firstItem="wvr-jq-G1r" firstAttribute="top" secondItem="rmw-2x-KpA" secondAttribute="bottom" constant="38" id="nfD-oo-AmG"/>
+                            <constraint firstItem="Osb-M4-d6h" firstAttribute="trailing" secondItem="aZ3-al-nNh" secondAttribute="trailingMargin" id="wkV-bm-hxK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Demo" image="DemoIcon" id="KFE-NA-swX"/>
@@ -96,7 +87,6 @@
                         <outlet property="nameLabel" destination="deD-7y-NPr" id="Pb5-vx-ukE"/>
                         <outlet property="timeLabel" destination="eT4-ZY-myM" id="wnh-I5-mGV"/>
                         <outlet property="totalImpressionsLabel" destination="rmw-2x-KpA" id="IuV-Mj-1md"/>
-                        <outlet property="uniqueImpressionsLabel" destination="Uo3-BF-AD6" id="QHU-C7-ZB8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzy-nX-NOn" userLabel="First Responder" sceneMemberID="firstResponder"/>

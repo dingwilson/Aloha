@@ -15,12 +15,13 @@ class DemoViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var uniqueImpressionsLabel: UILabel!
     @IBOutlet weak var totalImpressionsLabel: UILabel!
     
     var manager: CLLocationManager?
     
     var beaconList = [(CLBeaconRegion, CLBeacon)]()
+    
+    var prevBeaconList = [(CLBeaconRegion, CLBeacon)]()
     
     var ref: FIRDatabaseReference!
     
@@ -28,12 +29,17 @@ class DemoViewController: UIViewController {
     
     var currentUser : String!
     var currentUserType: String!
+    var currentMinor : Int!
     var currentTime : Int!
+    
+    var totalImpressions : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = FIRDatabase.database().reference()
+        
+        totalImpressions = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,10 +48,6 @@ class DemoViewController: UIViewController {
         userList = [(Int, String, String)]()
         
         updateMinors()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         if CLLocationManager.isRangingAvailable() {
             manager = CLLocationManager()
@@ -63,10 +65,16 @@ class DemoViewController: UIViewController {
             })
             self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         currentTime = 0
         
-        var timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
+        
+        let valueTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.updateValues), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -103,24 +111,80 @@ class DemoViewController: UIViewController {
         }
     }
     
-    func findBeacons() {
+    func findClosestBeacon() {
+        var closestName : String!
+        var closestMinor : Int!
+        var closestType : String!
+        var closestRSSI : Int!
+        
         for (region, beacon) in beaconList {
-            var title = region.identifier
-            
             for (minor, name, type) in self.userList {
                 if minor == Int(beacon.minor) {
-                    title = name
+                    if let rssi = closestRSSI {
+                        if beacon.rssi != 0 && beacon.rssi > rssi {
+                            closestName = name
+                            closestMinor = minor
+                            closestType = type
+                            closestRSSI = beacon.rssi
+                        }
+                    } else {
+                        closestName = name
+                        closestMinor = minor
+                        closestType = type
+                        closestRSSI = beacon.rssi
+                    }
+
                 }
             }
-            
-            let string = "\(title), Major: \(beacon.major), Minor: \(beacon.minor)"
-            let secondString = "\(beacon.rssi)"
+        }
+        
+        if let current = self.currentMinor {
+            if closestMinor != current {
+                currentTime = 0
+                currentMinor = closestMinor
+                currentUser = closestName!
+                currentUserType = closestType!
+            }
+        } else {
+            currentTime = 0
+            currentMinor = closestMinor
+            currentUser = closestName!
+            currentUserType = closestType!
         }
     }
     
     func updateTime() {
+        findClosestBeacon()
+        
         currentTime = currentTime + 1
         timeLabel.text = "You have been here for \(currentTime!) seconds."
+        
+        nameLabel.text = currentUser
+        
+        switch(currentUserType!) {
+        case "Hacker":
+            messageLabel.text = "Thank you for hacking with us at Buildathon!"
+            break
+        case "Designer":
+            messageLabel.text = "Thank you for designing at Buildathon!"
+            break
+        case "Mentor":
+            messageLabel.text = "Thank you for mentoring us at Buildathon!"
+            break
+        case "Sponsor":
+            messageLabel.text = "Thank you for sponsoring us at Buildathon!"
+            break
+        case "Judge":
+            messageLabel.text = "Thank you for judging us at Buildathon!"
+            break
+        default:
+            messageLabel.text = "Thank you for being amazing. :)"
+            break
+        }
+    }
+    
+    func updateValues() {
+        totalImpressionsLabel.text = "Total Impressions: \(totalImpressions!)"
     }
 }
 
@@ -129,18 +193,18 @@ extension DemoViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         
-        var outputText = "Ranged beacons count: \(beacons.count)\n\n"
-        beacons.forEach { beacon in
-            outputText += beacon.description.substring(from: beacon.description.range(of:"major:")!.lowerBound)
-            outputText += "\n\n"
-        }
-        //NSLog("%@", outputText)
-        
         beacons.forEach { beacon in
             if let index = beaconList.index(where: { $0.1.proximityUUID.uuidString == beacon.proximityUUID.uuidString && $0.1.major == beacon.major && $0.1.minor == beacon.minor }) {
-                beaconList[index] = (region, beacon)
+                if beacon.proximity == .far {
+                    beaconList.remove(at: index)
+                } else {
+                    beaconList[index] = (region, beacon)
+                }
             } else {
-                beaconList.append((region, beacon))
+                if beacon.proximity == .immediate {
+                    beaconList.append((region, beacon))
+                    totalImpressions = totalImpressions + 1
+                }
             }
         }
     }
