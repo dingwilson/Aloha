@@ -39,6 +39,16 @@ class SettingsViewController: UIViewController {
                 if name != "" && minorValue != "" {
                     self.ref.child("beacons").child(minorValue).setValue(["name": name,
                                                                           "type": segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)])
+                    self.view.endEditing(true)
+                    
+                    let alert = UIAlertController(title: "Success!", message: "You have successfully claimed your Beacon.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default) { alertAction -> Void in
+                        self.navigationController?.popViewController(animated: true)
+                    })
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    self.nameTextField.text = ""
+                    self.minorValueTextField.text = ""
                 }
             }
         }
