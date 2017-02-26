@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
@@ -17,6 +18,10 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     var locationManager: CLLocationManager! = CLLocationManager()
     
+    var beaconList = [(CLBeaconRegion, CLBeacon)]()
+    
+    var timer : Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +30,35 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
         self.mapView.isUserInteractionEnabled = false
         
         getLocation()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if CLLocationManager.isRangingAvailable() {
+            locationManager = CLLocationManager()
+            locationManager.delegate = self
+            
+            locationManager.requestWhenInUseAuthorization()
+            
+            let beaconRegions = [CLBeaconRegion(proximityUUID: NSUUID(uuidString: "637DBAD2-7B9E-4E9F-930E-01D7C3AEC175")! as UUID, identifier: "Freeman")]
+            
+            beaconRegions.forEach(locationManager.startRangingBeacons)
+        } else {
+            let alert = UIAlertController(title: "Unsupported", message: "Beacon ranging unavailable on this device.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default) { alertAction -> Void in
+                self.navigationController?.popViewController(animated: true)
+            })
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if let rangedRegions = locationManager?.rangedRegions as? Set<CLBeaconRegion> {
+            rangedRegions.forEach(locationManager!.stopRangingBeacons)
+        }
     }
     
     func getLocation() {
@@ -69,5 +103,29 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let location = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        
+        beacons.forEach { beacon in
+            if let index = beaconList.index(where: { $0.1.proximityUUID.uuidString == beacon.proximityUUID.uuidString && $0.1.major == beacon.major && $0.1.minor == beacon.minor }) {
+                if beacon.proximity == .far {
+                    beaconList.remove(at: index)
+                } else {
+                    beaconList[index] = (region, beacon)
+                }
+            } else {
+                if beacon.proximity != .far {
+                    beaconList.append((region, beacon))
+                }
+            }
+        }
+        
+        print(beacons.count)
+        
+    }
+    
+    func createHeatMap() {
+        
     }
 }

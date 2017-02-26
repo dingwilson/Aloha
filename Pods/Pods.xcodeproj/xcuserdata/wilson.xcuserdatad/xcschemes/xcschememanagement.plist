@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DTMHeatmap.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -52,12 +57,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4E22757FFC709193489E16E4E346C088</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>589834EB4FF3529ABA08297BFEAFA3EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A014B0D543115F83871143E5FBF32363</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADC985EC8403C530B1A1F9F094392379</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF5A3F1A1530921880E32ACC3F76C16F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
