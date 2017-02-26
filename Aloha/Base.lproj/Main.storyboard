@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="329" y="-1367"/>
         </scene>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="LSO-8C-e8O">
             <objects>
-                <viewController id="DVp-Wk-4wR" sceneMemberID="viewController">
+                <viewController id="DVp-Wk-4wR" customClass="SplashViewController" customModule="Aloha" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VGy-hk-Lbf"/>
                         <viewControllerLayoutGuide type="bottom" id="sdK-zt-eYM"/>
@@ -39,12 +40,59 @@
                     <view key="view" contentMode="scaleToFill" id="8ce-0z-Hgg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="5iU-ir-RCY" customClass="BackgroundVideo" customModule="SwiftVideoBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aloha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWp-n4-IhL">
+                                <rect key="frame" x="16" y="20" width="343" height="102"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="85"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TransparentIcon" translatesAutoresizingMaskIntoConstraints="NO" id="op2-Ih-d5w">
+                                <rect key="frame" x="12" y="158" width="350" height="351"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-mB-Qt7">
+                                <rect key="frame" x="12" y="583" width="347" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="a2n-WF-Tw8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Welcome!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1gP-Od-q13" kind="show" id="hlS-0e-bHC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5iU-ir-RCY" firstAttribute="top" secondItem="8ce-0z-Hgg" secondAttribute="top" id="0ha-31-t0Q"/>
+                            <constraint firstItem="CQ5-mB-Qt7" firstAttribute="top" secondItem="op2-Ih-d5w" secondAttribute="bottom" constant="74" id="CE7-G8-ffN"/>
+                            <constraint firstItem="5iU-ir-RCY" firstAttribute="centerX" secondItem="op2-Ih-d5w" secondAttribute="centerX" id="Koe-cu-thT"/>
+                            <constraint firstAttribute="bottom" secondItem="CQ5-mB-Qt7" secondAttribute="bottom" constant="20" symbolic="YES" id="VrS-rG-GhQ"/>
+                            <constraint firstItem="qWp-n4-IhL" firstAttribute="trailing" secondItem="CQ5-mB-Qt7" secondAttribute="trailing" id="X95-Oh-awQ"/>
+                            <constraint firstItem="qWp-n4-IhL" firstAttribute="top" secondItem="VGy-hk-Lbf" secondAttribute="bottom" id="ZwM-Vq-aN0"/>
+                            <constraint firstItem="5iU-ir-RCY" firstAttribute="bottom" secondItem="sdK-zt-eYM" secondAttribute="top" id="iWk-9x-yHp"/>
+                            <constraint firstItem="qWp-n4-IhL" firstAttribute="centerX" secondItem="op2-Ih-d5w" secondAttribute="centerX" id="mvq-dj-hKO"/>
+                            <constraint firstAttribute="trailing" secondItem="5iU-ir-RCY" secondAttribute="trailing" id="oTf-xF-I05"/>
+                            <constraint firstItem="5iU-ir-RCY" firstAttribute="centerY" secondItem="op2-Ih-d5w" secondAttribute="centerY" id="ph6-nX-CA1"/>
+                            <constraint firstItem="5iU-ir-RCY" firstAttribute="leading" secondItem="8ce-0z-Hgg" secondAttribute="leading" id="rfh-Wv-Rhi"/>
+                            <constraint firstItem="qWp-n4-IhL" firstAttribute="leading" secondItem="8ce-0z-Hgg" secondAttribute="leadingMargin" id="sdz-ns-mvy"/>
+                            <constraint firstItem="op2-Ih-d5w" firstAttribute="leading" secondItem="8ce-0z-Hgg" secondAttribute="leadingMargin" constant="-4" id="t3k-9t-oWq"/>
+                            <constraint firstItem="op2-Ih-d5w" firstAttribute="leading" secondItem="CQ5-mB-Qt7" secondAttribute="leading" id="wnT-MQ-yXO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundVideo" destination="5iU-ir-RCY" id="bla-De-oHx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HB-HO-Wdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1935" y="-881"/>
+            <point key="canvasLocation" x="-1761" y="-881"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="17y-44-gcC">
@@ -113,4 +161,7 @@
             <point key="canvasLocation" x="329" y="-366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TransparentIcon" width="512" height="512"/>
+    </resources>
 </document>
