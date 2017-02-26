@@ -12,6 +12,12 @@ import FirebaseDatabase
 
 class DemoViewController: UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var uniqueImpressionsLabel: UILabel!
+    @IBOutlet weak var totalImpressionsLabel: UILabel!
+    
     var manager: CLLocationManager?
     
     var beaconList = [(CLBeaconRegion, CLBeacon)]()
@@ -19,6 +25,10 @@ class DemoViewController: UIViewController {
     var ref: FIRDatabaseReference!
     
     var userList = [(Int, String, String)]()
+    
+    var currentUser : String!
+    var currentUserType: String!
+    var currentTime : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +63,10 @@ class DemoViewController: UIViewController {
             })
             self.present(alert, animated: true, completion: nil)
         }
+        
+        currentTime = 0
+        
+        var timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -80,7 +94,7 @@ class DemoViewController: UIViewController {
                         }
                     }
                     let user = (Int(key as! String)!, name as! String, type as! String)
-                    self.userList.append(user as! (Int, String, String))
+                    self.userList.append(user)
                 }
             }
             
@@ -102,6 +116,11 @@ class DemoViewController: UIViewController {
             let string = "\(title), Major: \(beacon.major), Minor: \(beacon.minor)"
             let secondString = "\(beacon.rssi)"
         }
+    }
+    
+    func updateTime() {
+        currentTime = currentTime + 1
+        timeLabel.text = "You have been here for \(currentTime!) seconds."
     }
 }
 

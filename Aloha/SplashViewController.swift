@@ -16,7 +16,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        backgroundVideo.createBackgroundVideo(name: "Background", type: "mp4", alpha: 0.25)
+        backgroundVideo.createBackgroundVideo(name: "Background", type: "mp4", alpha: 0.1)
     }
     
     

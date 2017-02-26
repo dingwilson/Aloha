@@ -72,7 +72,7 @@ class BeaconListTableViewController: UITableViewController {
                     for (item, object) in (value as! NSDictionary) {
                         if item as! String == "name" {
                             let user = (Int(key as! String)!, object as! String)
-                            self.userList.append(user as! (Int, String))
+                            self.userList.append(user)
                         }
                     }
                 }
