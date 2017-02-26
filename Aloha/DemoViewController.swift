@@ -31,7 +31,7 @@ class DemoViewController: UIViewController {
     var userList = [(Int, String, String)]()
     
     var currentUser : String = "My Friend"
-    var currentUserType: String = "Thank you for being amazing. :)"
+    var currentUserType: String = "False"
     var currentMinor : Int = 999999
     var currentTime : Int = 0
     
@@ -80,6 +80,12 @@ class DemoViewController: UIViewController {
         super.viewDidAppear(animated)
         
         currentTime = 0
+        
+        currentUser = "My Friend"
+        
+        currentMinor = 999999
+        
+        currentUserType = "False"
         
         while currentUser == nil {
             findClosestBeacon()
