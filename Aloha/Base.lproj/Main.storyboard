@@ -23,11 +23,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Demo" id="KFE-NA-swX"/>
+                    <tabBarItem key="tabBarItem" title="Demo" image="DemoIcon" id="KFE-NA-swX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzy-nX-NOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="-1367"/>
+            <point key="canvasLocation" x="329" y="-1972"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="LSO-8C-e8O">
@@ -106,6 +106,7 @@
                     <connections>
                         <segue destination="vCV-Ch-JW2" kind="relationship" relationship="viewControllers" id="ouo-vg-Hux"/>
                         <segue destination="Lhh-vR-VCg" kind="relationship" relationship="viewControllers" id="y6v-Tu-m6D"/>
+                        <segue destination="jNz-HP-cSu" kind="relationship" relationship="viewControllers" id="kbJ-0D-awE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqf-YR-EMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,13 +140,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbW-TK-XM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1407" y="-367"/>
+            <point key="canvasLocation" x="1583" y="-881"/>
         </scene>
         <!--Device List-->
         <scene sceneID="qbb-Rr-Oc8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lhh-vR-VCg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Device List" id="DNk-zX-krk"/>
+                    <tabBarItem key="tabBarItem" title="Device List" image="DeviceList" id="DNk-zX-krk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TRx-fU-F6x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -158,10 +159,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaf-fI-A42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="-366"/>
+            <point key="canvasLocation" x="329" y="-881"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="EY3-H0-Nxb">
+            <objects>
+                <viewController id="jNz-HP-cSu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T0S-3R-Ws4"/>
+                        <viewControllerLayoutGuide type="bottom" id="x6H-vI-oyH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cfc-dT-fnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingsIcon" id="F8I-Pe-dDz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ta-DL-BSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="-1"/>
         </scene>
     </scenes>
     <resources>
+        <image name="DemoIcon" width="36" height="36"/>
+        <image name="DeviceList" width="36" height="36"/>
+        <image name="SettingsIcon" width="36" height="36"/>
         <image name="TransparentIcon" width="512" height="512"/>
     </resources>
 </document>
