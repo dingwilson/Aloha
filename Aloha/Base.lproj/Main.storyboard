@@ -183,6 +183,7 @@
                     <connections>
                         <segue destination="vCV-Ch-JW2" kind="relationship" relationship="viewControllers" id="ouo-vg-Hux"/>
                         <segue destination="Lhh-vR-VCg" kind="relationship" relationship="viewControllers" id="y6v-Tu-m6D"/>
+                        <segue destination="xeH-fB-olG" kind="relationship" relationship="viewControllers" id="0Io-GF-VZP"/>
                         <segue destination="jNz-HP-cSu" kind="relationship" relationship="viewControllers" id="kbJ-0D-awE"/>
                     </connections>
                 </tabBarController>
@@ -233,7 +234,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbW-TK-XM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="-881"/>
+            <point key="canvasLocation" x="1569" y="-1183"/>
         </scene>
         <!--Device List-->
         <scene sceneID="qbb-Rr-Oc8">
@@ -252,7 +253,40 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaf-fI-A42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="-881"/>
+            <point key="canvasLocation" x="329" y="-1183"/>
+        </scene>
+        <!--Heatmap-->
+        <scene sceneID="m0P-Le-V5U">
+            <objects>
+                <viewController id="xeH-fB-olG" customClass="HeatMapViewController" customModule="Aloha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ikz-Re-MUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="1i9-z5-LrX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ib-Ka-hbN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-3R-FqE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="leading" secondItem="7ib-Ka-hbN" secondAttribute="leading" id="HSh-XY-pUF"/>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="top" secondItem="7ib-Ka-hbN" secondAttribute="top" id="Kz7-xu-aKq"/>
+                            <constraint firstAttribute="trailing" secondItem="fGQ-3R-FqE" secondAttribute="trailing" id="YmU-hS-Aab"/>
+                            <constraint firstItem="fGQ-3R-FqE" firstAttribute="bottom" secondItem="1i9-z5-LrX" secondAttribute="top" id="zoi-yX-bAs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Heatmap" id="ocL-Wo-O4C"/>
+                    <connections>
+                        <outlet property="mapView" destination="fGQ-3R-FqE" id="y4h-MA-BPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEA-5N-joV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328.80000000000001" y="-408.84557721139436"/>
         </scene>
         <!--Settings-->
         <scene sceneID="EY3-H0-Nxb">
@@ -391,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ta-DL-BSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328.80000000000001" y="-1.3493253373313345"/>
+            <point key="canvasLocation" x="329" y="343"/>
         </scene>
     </scenes>
     <resources>

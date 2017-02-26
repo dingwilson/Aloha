@@ -17,6 +17,7 @@
 		C8E5D29C1E62BE3D007EFC60 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D29B1E62BE3D007EFC60 /* SettingsViewController.swift */; };
 		C8E5D29E1E62BEF0007EFC60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D29D1E62BEF0007EFC60 /* GoogleService-Info.plist */; };
 		C8E5D2A01E62CE55007EFC60 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D29F1E62CE55007EFC60 /* DemoViewController.swift */; };
+		C8E5D2A21E631355007EFC60 /* HeatMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2A11E631355007EFC60 /* HeatMapViewController.swift */; };
 		F642DC42B07D0AC6138BEF4D /* Pods_Aloha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CDAB551A76113596E0DAB3 /* Pods_Aloha.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		C8E5D29B1E62BE3D007EFC60 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C8E5D29D1E62BEF0007EFC60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8E5D29F1E62CE55007EFC60 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		C8E5D2A11E631355007EFC60 /* HeatMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatMapViewController.swift; sourceTree = "<group>"; };
 		D1CE7AB58115EE49ECE1C774 /* Pods-Aloha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aloha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aloha/Pods-Aloha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				C8E5D2971E62B963007EFC60 /* SplashViewController.swift */,
 				C8E5D29F1E62CE55007EFC60 /* DemoViewController.swift */,
 				C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */,
+				C8E5D2A11E631355007EFC60 /* HeatMapViewController.swift */,
 				C8E5D29B1E62BE3D007EFC60 /* SettingsViewController.swift */,
 				C8E5D2671E62B0C3007EFC60 /* Main.storyboard */,
 				C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */,
@@ -232,6 +235,7 @@
 				C8E5D2981E62B963007EFC60 /* SplashViewController.swift in Sources */,
 				C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */,
 				C8E5D2641E62B0C3007EFC60 /* AppDelegate.swift in Sources */,
+				C8E5D2A21E631355007EFC60 /* HeatMapViewController.swift in Sources */,
 				C8E5D29C1E62BE3D007EFC60 /* SettingsViewController.swift in Sources */,
 				C8E5D2A01E62CE55007EFC60 /* DemoViewController.swift in Sources */,
 			);
