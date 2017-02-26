@@ -90,10 +90,6 @@ class DemoViewController: UIViewController {
         
         currentUserType = "False"
         
-        while currentUser == nil {
-            findClosestBeacon()
-        }
-        
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
         
         self.valueTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateValues), userInfo: nil, repeats: true)
