@@ -12,6 +12,7 @@
 		C8E5D2691E62B0C3007EFC60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D2671E62B0C3007EFC60 /* Main.storyboard */; };
 		C8E5D26B1E62B0C3007EFC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */; };
 		C8E5D26E1E62B0C3007EFC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D26C1E62B0C3007EFC60 /* LaunchScreen.storyboard */; };
+		C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8E5D26D1E62B0C3007EFC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8E5D26F1E62B0C3007EFC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C8E5D2631E62B0C3007EFC60 /* AppDelegate.swift */,
 				C8E5D2651E62B0C3007EFC60 /* ViewController.swift */,
+				C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */,
 				C8E5D2671E62B0C3007EFC60 /* Main.storyboard */,
 				C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */,
 				C8E5D26C1E62B0C3007EFC60 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */,
 				C8E5D2661E62B0C3007EFC60 /* ViewController.swift in Sources */,
 				C8E5D2641E62B0C3007EFC60 /* AppDelegate.swift in Sources */,
 			);
@@ -259,7 +263,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
 				DEVELOPMENT_TEAM = Z88HQX98VL;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = Aloha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonding.Aloha;
@@ -272,7 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
 				DEVELOPMENT_TEAM = Z88HQX98VL;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = Aloha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonding.Aloha;
