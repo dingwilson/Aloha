@@ -18,10 +18,18 @@ class BeaconListTableViewController: UITableViewController {
     
     var ref: FIRDatabaseReference!
     
+    var userList = [(Int, String)]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = FIRDatabase.database().reference()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        userList = [(Int, String)]()
         
         updateMinors()
     }
@@ -58,12 +66,16 @@ class BeaconListTableViewController: UITableViewController {
     func updateMinors() {
         ref.child("beacons").observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
-            let name = value?["name"] as? String ?? ""
             
-            if name != nil {
-                print(name)
-            } else {
-                print("Hello")
+            if let beacons = value {
+                for (key, value) in beacons {
+                    for (item, object) in (value as! NSDictionary) {
+                        if item as! String == "name" {
+                            let user = (Int(key as! String)!, object as! String)
+                            self.userList.append(user as! (Int, String))
+                        }
+                    }
+                }
             }
             
         }) { (error) in
@@ -88,7 +100,15 @@ extension BeaconListTableViewController {
         
         let (region, beacon) = beaconList[indexPath.row]
         
-        cell.textLabel?.text = "\(region.identifier), Major: \(beacon.major), Minor: \(beacon.minor)"
+        var title = region.identifier
+        
+        for (minor, name) in self.userList {
+            if minor == Int(beacon.minor) {
+                title = name
+            }
+        }
+        
+        cell.textLabel?.text = "\(title), Major: \(beacon.major), Minor: \(beacon.minor)"
         cell.detailTextLabel?.text = "\(beacon.rssi)"
         
         return cell
@@ -99,15 +119,14 @@ extension BeaconListTableViewController {
 extension BeaconListTableViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
-        // 1
+        
         var outputText = "Ranged beacons count: \(beacons.count)\n\n"
         beacons.forEach { beacon in
             outputText += beacon.description.substring(from: beacon.description.range(of:"major:")!.lowerBound)
             outputText += "\n\n"
         }
-        NSLog("%@", outputText)
-        
-        // 2
+        //NSLog("%@", outputText)
+
         beacons.forEach { beacon in
             if let index = beaconList.index(where: { $0.1.proximityUUID.uuidString == beacon.proximityUUID.uuidString && $0.1.major == beacon.major && $0.1.minor == beacon.minor }) {
                 beaconList[index] = (region, beacon)
@@ -115,8 +134,7 @@ extension BeaconListTableViewController: CLLocationManagerDelegate {
                 beaconList.append((region, beacon))
             }
         }
-        
-        // 3
+
         tableView.reloadData()
     }
 }
