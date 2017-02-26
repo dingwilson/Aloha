@@ -45,7 +45,7 @@ class DemoViewController: UIViewController {
         
         ref = FIRDatabase.database().reference()
         
-        backgroundVideo.createBackgroundVideo(name: "Background", type: "mp4", alpha: 0.3)
+        backgroundVideo.createBackgroundVideo(name: "Background", type: "mp4", alpha: 0.6)
         
         totalImpressions = 0
     }
@@ -182,6 +182,9 @@ class DemoViewController: UIViewController {
         nameLabel.text = currentUser
         
         switch(currentUserType) {
+        case "Me":
+            messageLabel.text = "Hey look! It's me!"
+            break
         case "Hacker":
             messageLabel.text = "Thank you for hacking with us at Buildathon!"
             break
