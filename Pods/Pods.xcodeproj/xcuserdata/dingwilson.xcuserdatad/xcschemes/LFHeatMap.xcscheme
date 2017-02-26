@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3D4B9F4ADAE06EE0186DDCB91672C79A'
-               BlueprintName = 'SwiftVideoBackground'
+               BlueprintIdentifier = '330017488B7BBC37CD89B9432AB25025'
+               BlueprintName = 'LFHeatMap'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftVideoBackground.framework'>
+               BuildableName = 'LFHeatMap.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>LFHeatMap.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-Aloha.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -32,7 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>330017488B7BBC37CD89B9432AB25025</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D4B9F4ADAE06EE0186DDCB91672C79A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4D1371720C08807E7BA167DA492B80EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>589834EB4FF3529ABA08297BFEAFA3EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

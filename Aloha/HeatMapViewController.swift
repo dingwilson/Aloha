@@ -20,6 +20,10 @@ class HeatMapViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.mapView.isZoomEnabled = false
+        self.mapView.isScrollEnabled = false
+        self.mapView.isUserInteractionEnabled = false
+        
         getLocation()
     }
     
