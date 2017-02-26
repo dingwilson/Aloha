@@ -17,6 +17,8 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var submitButton: UIButton!
+    
     var ref: FIRDatabaseReference!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -27,6 +29,8 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         ref = FIRDatabase.database().reference()
+        
+        submitButton.layer.cornerRadius = 7
     }
 
     @IBAction func didPressSubmit(_ sender: Any) {

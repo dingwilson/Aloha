@@ -37,6 +37,9 @@ class DemoViewController: UIViewController {
     
     var totalImpressions : Int!
     
+    var timer = Timer()
+    var valueTimer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,9 +94,9 @@ class DemoViewController: UIViewController {
             findClosestBeacon()
         }
         
-        let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
         
-        let valueTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateValues), userInfo: nil, repeats: true)
+        self.valueTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.updateValues), userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -102,6 +105,9 @@ class DemoViewController: UIViewController {
         if let rangedRegions = manager?.rangedRegions as? Set<CLBeaconRegion> {
             rangedRegions.forEach(manager!.stopRangingBeacons)
         }
+        
+        self.timer.invalidate()
+        self.valueTimer.invalidate()
     }
     
     func updateMinors() {
@@ -179,17 +185,17 @@ class DemoViewController: UIViewController {
         case "Hacker":
             messageLabel.text = "Thank you for hacking with us at Buildathon!"
             break
-        case "Designer":
-            messageLabel.text = "Thank you for designing at Buildathon!"
+        case "Teammate":
+            messageLabel.text = "Thanks for being on my team at Buildathon!"
             break
         case "Mentor":
-            messageLabel.text = "Thank you for mentoring us at Buildathon!"
+            messageLabel.text = "Thank you for mentoring at Buildathon!"
             break
         case "Sponsor":
-            messageLabel.text = "Thank you for sponsoring us at Buildathon!"
+            messageLabel.text = "Thank you for sponsoring Buildathon!"
             break
-        case "Judge":
-            messageLabel.text = "Thank you for judging us at Buildathon!"
+        case "Organizer":
+            messageLabel.text = "Thank you for organizing Buildathon!"
             break
         default:
             messageLabel.text = "Thank you for being amazing. :)"
