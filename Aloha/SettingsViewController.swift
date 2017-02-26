@@ -30,14 +30,16 @@ class SettingsViewController: UIViewController {
 
         ref = FIRDatabase.database().reference()
         
-        submitButton.layer.cornerRadius = 7
+        submitButton.layer.cornerRadius = 15
     }
 
     @IBAction func didPressSubmit(_ sender: Any) {
         if let name = nameTextField.text {
             if let minorValue = minorValueTextField.text {
-                self.ref.child("beacons").child(minorValue).setValue(["name": name,
-                                                                      "type": segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)])
+                if name != "" && minorValue != "" {
+                    self.ref.child("beacons").child(minorValue).setValue(["name": name,
+                                                                          "type": segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)])
+                }
             }
         }
     }
