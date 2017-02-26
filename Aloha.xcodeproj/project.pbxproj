@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C8E5D2641E62B0C3007EFC60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2631E62B0C3007EFC60 /* AppDelegate.swift */; };
-		C8E5D2661E62B0C3007EFC60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2651E62B0C3007EFC60 /* ViewController.swift */; };
 		C8E5D2691E62B0C3007EFC60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D2671E62B0C3007EFC60 /* Main.storyboard */; };
 		C8E5D26B1E62B0C3007EFC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */; };
 		C8E5D26E1E62B0C3007EFC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E5D26C1E62B0C3007EFC60 /* LaunchScreen.storyboard */; };
 		C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */; };
+		F642DC42B07D0AC6138BEF4D /* Pods_Aloha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CDAB551A76113596E0DAB3 /* Pods_Aloha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DC98BB050BE8E84F1BAFAD4 /* Pods-Aloha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aloha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aloha/Pods-Aloha.release.xcconfig"; sourceTree = "<group>"; };
+		91CDAB551A76113596E0DAB3 /* Pods_Aloha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aloha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E5D2601E62B0C3007EFC60 /* Aloha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aloha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E5D2631E62B0C3007EFC60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8E5D2651E62B0C3007EFC60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8E5D2681E62B0C3007EFC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8E5D26D1E62B0C3007EFC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8E5D26F1E62B0C3007EFC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconListTableViewController.swift; sourceTree = "<group>"; };
+		D1CE7AB58115EE49ECE1C774 /* Pods-Aloha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aloha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aloha/Pods-Aloha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F642DC42B07D0AC6138BEF4D /* Pods_Aloha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF05E520E9355642C07604C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91CDAB551A76113596E0DAB3 /* Pods_Aloha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8E5D2571E62B0C3007EFC60 = {
 			isa = PBXGroup;
 			children = (
 				C8E5D2621E62B0C3007EFC60 /* Aloha */,
 				C8E5D2611E62B0C3007EFC60 /* Products */,
+				E54C7B3709EFFCFBBB869252 /* Pods */,
+				AF05E520E9355642C07604C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				C8E5D2631E62B0C3007EFC60 /* AppDelegate.swift */,
-				C8E5D2651E62B0C3007EFC60 /* ViewController.swift */,
 				C8E5D2951E62B45D007EFC60 /* BeaconListTableViewController.swift */,
 				C8E5D2671E62B0C3007EFC60 /* Main.storyboard */,
 				C8E5D26A1E62B0C3007EFC60 /* Assets.xcassets */,
@@ -67,6 +79,15 @@
 			path = Aloha;
 			sourceTree = "<group>";
 		};
+		E54C7B3709EFFCFBBB869252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1CE7AB58115EE49ECE1C774 /* Pods-Aloha.debug.xcconfig */,
+				7DC98BB050BE8E84F1BAFAD4 /* Pods-Aloha.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8E5D2721E62B0C3007EFC60 /* Build configuration list for PBXNativeTarget "Aloha" */;
 			buildPhases = (
+				6EC7B6B64D4C374A50B98E23 /* [CP] Check Pods Manifest.lock */,
 				C8E5D25C1E62B0C3007EFC60 /* Sources */,
 				C8E5D25D1E62B0C3007EFC60 /* Frameworks */,
 				C8E5D25E1E62B0C3007EFC60 /* Resources */,
+				0BE024D15448FC92A1A342C6 /* [CP] Embed Pods Frameworks */,
+				8551444AA9FC1AEED8249741 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,13 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BE024D15448FC92A1A342C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aloha/Pods-Aloha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC7B6B64D4C374A50B98E23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8551444AA9FC1AEED8249741 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aloha/Pods-Aloha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8E5D25C1E62B0C3007EFC60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C8E5D2961E62B45D007EFC60 /* BeaconListTableViewController.swift in Sources */,
-				C8E5D2661E62B0C3007EFC60 /* ViewController.swift in Sources */,
 				C8E5D2641E62B0C3007EFC60 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +332,7 @@
 		};
 		C8E5D2731E62B0C3007EFC60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CE7AB58115EE49ECE1C774 /* Pods-Aloha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_INFINITE_RECURSION = NO;
@@ -277,6 +349,7 @@
 		};
 		C8E5D2741E62B0C3007EFC60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC98BB050BE8E84F1BAFAD4 /* Pods-Aloha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_INFINITE_RECURSION = NO;

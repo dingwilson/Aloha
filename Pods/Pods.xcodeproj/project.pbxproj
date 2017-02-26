@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19B9434CC44D3B59E3C7FEE4C51D793C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		21488A10A4CE8A8511B5A89241B6B910 /* SwiftVideoBackground-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2081D0E9D1828EF6B802892BFC88A7 /* SwiftVideoBackground-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		307942D0364567DA84285FCA4B1D5637 /* Pods-Aloha-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */; };
+		74086BC3072A9E5FB2DEDCC99DA132C1 /* SwiftVideoBackground-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8FAFA6CC6C95399EC10BC6D256FABD /* SwiftVideoBackground-dummy.m */; };
+		83A8FF309A29820249417F2ECF98739B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A4719A373895D37B59D1F7616A6D15AE /* SwiftVideoBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AED86D146CC062E9DBA4C44656DEA98 /* SwiftVideoBackground.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3C0D50656F9D5D4095A6D54442857FE /* Pods-Aloha-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8135C73B31152C7B8D16401DCB09FA2 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84E07D960719F03D5BF17A8B0F9D9D0 /* BackgroundVideo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4110A8F642590E88CA5BDEC5FDE1D06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A014B0D543115F83871143E5FBF32363;
+			remoteInfo = SwiftVideoBackground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2081D0E9D1828EF6B802892BFC88A7 /* SwiftVideoBackground-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-umbrella.h"; sourceTree = "<group>"; };
+		1554711ADF1741BF6A539C7534130B0E /* Pods-Aloha-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aloha-frameworks.sh"; sourceTree = "<group>"; };
+		2DF143D52C9FBB01AA3B6FBD77404377 /* SwiftVideoBackground.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftVideoBackground.modulemap; sourceTree = "<group>"; };
+		3AED86D146CC062E9DBA4C44656DEA98 /* SwiftVideoBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftVideoBackground.h; path = SwiftVideoBackground/SwiftVideoBackground.h; sourceTree = "<group>"; };
+		4ACEA8FC0FA7832FE6A63A1A1D3793B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftVideoBackground.xcconfig; sourceTree = "<group>"; };
+		4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aloha-dummy.m"; sourceTree = "<group>"; };
+		55D1E963852FA47CEAAD70AACC3551DD /* Pods-Aloha-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aloha-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EB4AFB99670A8E7047E897319CC77B8 /* Pods-Aloha-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aloha-resources.sh"; sourceTree = "<group>"; };
+		774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aloha-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aloha.release.xcconfig"; sourceTree = "<group>"; };
+		C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aloha.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC45F9F21DC89EB265BF1444E10338B9 /* SwiftVideoBackground-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoBackground-prefix.pch"; sourceTree = "<group>"; };
+		D8F0A5C4AC8B942F749316BF74F949DF /* SwiftVideoBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftVideoBackground.framework; path = SwiftVideoBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6E768F1E30C03637D3FC3B5D37BBAD /* Pods-Aloha-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aloha-acknowledgements.plist"; sourceTree = "<group>"; };
+		E14DB07A0B2D0BE768B2CE33AD759158 /* Pods-Aloha.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Aloha.modulemap"; sourceTree = "<group>"; };
+		E84E07D960719F03D5BF17A8B0F9D9D0 /* BackgroundVideo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundVideo.swift; path = SwiftVideoBackground/BackgroundVideo.swift; sourceTree = "<group>"; };
+		EE8FAFA6CC6C95399EC10BC6D256FABD /* SwiftVideoBackground-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftVideoBackground-dummy.m"; sourceTree = "<group>"; };
+		F43102A725A2FCAC7566068A946116B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB014A077C242B49DF40BDF9CAB2374 /* Pods_Aloha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aloha.framework; path = "Pods-Aloha.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		537CE6303A1F02A30B3D021C6A9EEF07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B9434CC44D3B59E3C7FEE4C51D793C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9434DF8308DFC6C451F135B26C2631B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A8FF309A29820249417F2ECF98739B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		258E51AA855AC31137B48C84C47630B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F43102A725A2FCAC7566068A946116B0 /* Info.plist */,
+				2DF143D52C9FBB01AA3B6FBD77404377 /* SwiftVideoBackground.modulemap */,
+				4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */,
+				EE8FAFA6CC6C95399EC10BC6D256FABD /* SwiftVideoBackground-dummy.m */,
+				CC45F9F21DC89EB265BF1444E10338B9 /* SwiftVideoBackground-prefix.pch */,
+				0E2081D0E9D1828EF6B802892BFC88A7 /* SwiftVideoBackground-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftVideoBackground";
+			sourceTree = "<group>";
+		};
+		2BC77BAFD9170CFC4ADAB61F3B355C1D /* SwiftVideoBackground */ = {
+			isa = PBXGroup;
+			children = (
+				E84E07D960719F03D5BF17A8B0F9D9D0 /* BackgroundVideo.swift */,
+				3AED86D146CC062E9DBA4C44656DEA98 /* SwiftVideoBackground.h */,
+				258E51AA855AC31137B48C84C47630B2 /* Support Files */,
+			);
+			name = SwiftVideoBackground;
+			path = SwiftVideoBackground;
+			sourceTree = "<group>";
+		};
+		485C1B5D1C173BDE75E1FACBF284D6FC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBDD6593C9A6F1625CC87BFC15E2777C /* Pods-Aloha */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4E0CE5980078E9E05EEAA6850F61ADB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCB014A077C242B49DF40BDF9CAB2374 /* Pods_Aloha.framework */,
+				D8F0A5C4AC8B942F749316BF74F949DF /* SwiftVideoBackground.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		78FF8E955C0CD2B0DA199720A78E929E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BC77BAFD9170CFC4ADAB61F3B355C1D /* SwiftVideoBackground */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				78FF8E955C0CD2B0DA199720A78E929E /* Pods */,
+				4E0CE5980078E9E05EEAA6850F61ADB0 /* Products */,
+				485C1B5D1C173BDE75E1FACBF284D6FC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBDD6593C9A6F1625CC87BFC15E2777C /* Pods-Aloha */ = {
+			isa = PBXGroup;
+			children = (
+				4ACEA8FC0FA7832FE6A63A1A1D3793B1 /* Info.plist */,
+				E14DB07A0B2D0BE768B2CE33AD759158 /* Pods-Aloha.modulemap */,
+				55D1E963852FA47CEAAD70AACC3551DD /* Pods-Aloha-acknowledgements.markdown */,
+				DD6E768F1E30C03637D3FC3B5D37BBAD /* Pods-Aloha-acknowledgements.plist */,
+				4EF3DD1CB9059B273CD8151D795BE0A2 /* Pods-Aloha-dummy.m */,
+				1554711ADF1741BF6A539C7534130B0E /* Pods-Aloha-frameworks.sh */,
+				5EB4AFB99670A8E7047E897319CC77B8 /* Pods-Aloha-resources.sh */,
+				774359E9421C8CF0064CD6D484DCFEC4 /* Pods-Aloha-umbrella.h */,
+				C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */,
+				A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */,
+			);
+			name = "Pods-Aloha";
+			path = "Target Support Files/Pods-Aloha";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2684B9BABDDDFCF2227EED6F6CC391D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3C0D50656F9D5D4095A6D54442857FE /* Pods-Aloha-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D5D0FCFBD6F64BF56E6CC8495E8B14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21488A10A4CE8A8511B5A89241B6B910 /* SwiftVideoBackground-umbrella.h in Headers */,
+				A4719A373895D37B59D1F7616A6D15AE /* SwiftVideoBackground.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2773E5D617062F73E4D4FEA72B3C5896 /* Pods-Aloha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F4FC8BA19F30BC41FF75F72621B400D /* Build configuration list for PBXNativeTarget "Pods-Aloha" */;
+			buildPhases = (
+				5034FD05587D7406D54C838FF677F383 /* Sources */,
+				537CE6303A1F02A30B3D021C6A9EEF07 /* Frameworks */,
+				2684B9BABDDDFCF2227EED6F6CC391D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4B57EA52771A4FBE15FC76A94988432 /* PBXTargetDependency */,
+			);
+			name = "Pods-Aloha";
+			productName = "Pods-Aloha";
+			productReference = FCB014A077C242B49DF40BDF9CAB2374 /* Pods_Aloha.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A014B0D543115F83871143E5FBF32363 /* SwiftVideoBackground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EE066D3E9A7564C5A4BFBD2D60BE670 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */;
+			buildPhases = (
+				F760AAF340FBDC716EA35EEEDB9282BD /* Sources */,
+				9434DF8308DFC6C451F135B26C2631B6 /* Frameworks */,
+				26D5D0FCFBD6F64BF56E6CC8495E8B14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftVideoBackground;
+			productName = SwiftVideoBackground;
+			productReference = D8F0A5C4AC8B942F749316BF74F949DF /* SwiftVideoBackground.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4E0CE5980078E9E05EEAA6850F61ADB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2773E5D617062F73E4D4FEA72B3C5896 /* Pods-Aloha */,
+				A014B0D543115F83871143E5FBF32363 /* SwiftVideoBackground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5034FD05587D7406D54C838FF677F383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307942D0364567DA84285FCA4B1D5637 /* Pods-Aloha-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F760AAF340FBDC716EA35EEEDB9282BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8135C73B31152C7B8D16401DCB09FA2 /* BackgroundVideo.swift in Sources */,
+				74086BC3072A9E5FB2DEDCC99DA132C1 /* SwiftVideoBackground-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4B57EA52771A4FBE15FC76A94988432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftVideoBackground;
+			target = A014B0D543115F83871143E5FBF32363 /* SwiftVideoBackground */;
+			targetProxy = D4110A8F642590E88CA5BDEC5FDE1D06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77FB74A6A2A7C8F6FF34F9165395A48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftVideoBackground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91AF9B369F2B90E652D8F35FD7925788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42914F34C0C681A664B9D7E853E8569 /* Pods-Aloha.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aloha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9346C2045E56C83B2EF200506406EBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3DA169A043B8B684D2F57C5A4B5830B /* Pods-Aloha.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Aloha/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aloha/Pods-Aloha.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aloha;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4083FA7AA05344BD6360A5CFD52D7B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0248C0A4514EFDCC78E9A75D43E9B4 /* SwiftVideoBackground.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftVideoBackground/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftVideoBackground/SwiftVideoBackground.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftVideoBackground;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EE066D3E9A7564C5A4BFBD2D60BE670 /* Build configuration list for PBXNativeTarget "SwiftVideoBackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77FB74A6A2A7C8F6FF34F9165395A48D /* Debug */,
+				A4083FA7AA05344BD6360A5CFD52D7B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F4FC8BA19F30BC41FF75F72621B400D /* Build configuration list for PBXNativeTarget "Pods-Aloha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91AF9B369F2B90E652D8F35FD7925788 /* Debug */,
+				9346C2045E56C83B2EF200506406EBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
